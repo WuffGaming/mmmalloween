@@ -5,9 +5,13 @@ FNF Links: **[itch.io page](https://ninja-muffin24.itch.io/funkin) ⋅ [Newgroun
 
 # Credits
 
+### The guy who made this. Fork
+- [WuffGaming](https://bsky.app/profile/wuffgaming.bsky.social) - i dunno i havent done anything but This
+
+
 ### Bob's Onslaught
-- [AetherDX](https://twitter.com/AetherDX), [AyeTSG](https://twitter.com/AyeTSG) and [wildythomas](https://www.youtube.com/channel/UCrUhQeLDv7lpZifWfPr4uGQ) - Programming
-- [HiPhlox](https://twitter.com/HiPhlox) and [donney](https://twitter.com/Donna863_) - Art
+- [wildythomas](https://www.youtube.com/channel/UCrUhQeLDv7lpZifWfPr4uGQ) - Programming
+- [HiPhlox](https://x.com/xX_phlox_360) and [donney](https://twitter.com/Donna863_) - Art
 - [wildythomas](https://www.youtube.com/channel/UCm3eGs2etEOMzRX0iQ4QzqQ) and [KyleGFX](https://twitter.com/KyleGFX_RBLX) - Music
 
 ### Special Thanks
