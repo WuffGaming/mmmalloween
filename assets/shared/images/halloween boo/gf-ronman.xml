@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ROn_HALLOWEENNNN.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="RON_boppin0000" x="10" y="10" width="266" height="348" frameX="0" frameY="-17" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0001" x="10" y="10" width="266" height="348" frameX="0" frameY="-17" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0002" x="286" y="10" width="266" height="353" frameX="-2" frameY="-14" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0003" x="286" y="10" width="266" height="353" frameX="-2" frameY="-14" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0004" x="562" y="10" width="267" height="363" frameX="-2" frameY="-6" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0005" x="562" y="10" width="267" height="363" frameX="-2" frameY="-6" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0006" x="839" y="10" width="266" height="368" frameX="0" frameY="-1" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0007" x="839" y="10" width="266" height="368" frameX="0" frameY="-1" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0008" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0009" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0010" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0011" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0012" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0013" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_boppin0014" x="1115" y="10" width="266" height="370" frameX="0" frameY="0" frameWidth="269" frameHeight="370"/>
+	<SubTexture name="RON_missed0000" x="894" y="604" width="262" height="378" frameX="-2" frameY="0" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0001" x="894" y="604" width="262" height="378" frameX="-2" frameY="0" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0002" x="1166" y="604" width="266" height="371" frameX="0" frameY="-7" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0003" x="1166" y="604" width="266" height="371" frameX="0" frameY="-7" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0004" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0005" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0006" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0007" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0008" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0009" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0010" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0011" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0012" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0013" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+	<SubTexture name="RON_missed0014" x="1442" y="604" width="266" height="370" frameX="0" frameY="-8" frameWidth="266" frameHeight="378"/>
+</TextureAtlas>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BG_Characters.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Character100000" x="10" y="10" width="310" height="274"/>
+	<SubTexture name="Character100001" x="330" y="10" width="310" height="274"/>
+	<SubTexture name="Character100002" x="650" y="10" width="310" height="274"/>
+	<SubTexture name="Character100003" x="970" y="10" width="310" height="274"/>
+	<SubTexture name="Character110000" x="1290" y="10" width="310" height="274"/>
+	<SubTexture name="Character110001" x="1610" y="10" width="310" height="274"/>
+	<SubTexture name="Character110002" x="1930" y="10" width="310" height="274"/>
+	<SubTexture name="Character110003" x="2250" y="10" width="310" height="274"/>
+	<SubTexture name="Character110004" x="2570" y="10" width="310" height="274"/>
+	<SubTexture name="Character110005" x="2890" y="10" width="310" height="274"/>
+	<SubTexture name="Character120000" x="3210" y="10" width="310" height="274"/>
+	<SubTexture name="Character120001" x="3530" y="10" width="310" height="274"/>
+	<SubTexture name="Character120002" x="10" y="294" width="310" height="274"/>
+	<SubTexture name="Character130000" x="330" y="294" width="310" height="274"/>
+	<SubTexture name="Character130001" x="650" y="294" width="310" height="274"/>
+	<SubTexture name="Character140000" x="970" y="294" width="310" height="274"/>
+	<SubTexture name="Character140001" x="1290" y="294" width="310" height="274"/>
+	<SubTexture name="Character150000" x="1610" y="294" width="310" height="275"/>
+	<SubTexture name="Character160000" x="1930" y="294" width="310" height="274"/>
+	<SubTexture name="Character160001" x="2250" y="294" width="310" height="274"/>
+	<SubTexture name="Character160002" x="2570" y="294" width="310" height="274"/>
+	<SubTexture name="Character160003" x="2890" y="294" width="310" height="274"/>
+	<SubTexture name="Character160004" x="3210" y="294" width="310" height="274"/>
+	<SubTexture name="Character160005" x="3530" y="294" width="310" height="274"/>
+	<SubTexture name="Character160006" x="10" y="579" width="310" height="274"/>
+	<SubTexture name="Character170000" x="330" y="579" width="310" height="274"/>
+	<SubTexture name="Character170001" x="650" y="579" width="310" height="274"/>
+	<SubTexture name="Character170002" x="970" y="579" width="310" height="274"/>
+	<SubTexture name="Character170003" x="1290" y="579" width="310" height="274"/>
+	<SubTexture name="Character180000" x="1610" y="579" width="310" height="274"/>
+	<SubTexture name="Character180001" x="1930" y="579" width="310" height="274"/>
+	<SubTexture name="Character190000" x="2250" y="579" width="310" height="274"/>
+	<SubTexture name="Character190001" x="2570" y="579" width="310" height="274"/>
+	<SubTexture name="Character200000" x="2890" y="579" width="310" height="274"/>
+	<SubTexture name="Character200001" x="2890" y="579" width="310" height="274"/>
+	<SubTexture name="Character200002" x="2890" y="579" width="310" height="274"/>
+	<SubTexture name="Character200003" x="3210" y="579" width="310" height="274"/>
+	<SubTexture name="Character200004" x="3210" y="579" width="310" height="274"/>
+	<SubTexture name="Character200005" x="3210" y="579" width="310" height="274"/>
+	<SubTexture name="Character200006" x="3530" y="579" width="310" height="274"/>
+	<SubTexture name="Character200007" x="3530" y="579" width="310" height="274"/>
+	<SubTexture name="Character200008" x="3530" y="579" width="310" height="274"/>
+	<SubTexture name="Character200009" x="10" y="863" width="310" height="274"/>
+	<SubTexture name="Character200010" x="10" y="863" width="310" height="274"/>
+	<SubTexture name="Character200011" x="10" y="863" width="310" height="274"/>
+	<SubTexture name="Character200012" x="330" y="863" width="310" height="274"/>
+	<SubTexture name="Character200013" x="330" y="863" width="310" height="274"/>
+	<SubTexture name="Character200014" x="330" y="863" width="310" height="274"/>
+	<SubTexture name="Character200015" x="650" y="863" width="310" height="274"/>
+	<SubTexture name="Character200016" x="650" y="863" width="310" height="274"/>
+	<SubTexture name="Character200017" x="650" y="863" width="310" height="274"/>
+	<SubTexture name="Character200018" x="970" y="863" width="310" height="274"/>
+	<SubTexture name="Character200019" x="970" y="863" width="310" height="274"/>
+	<SubTexture name="Character200020" x="970" y="863" width="310" height="274"/>
+	<SubTexture name="Character210000" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210001" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210002" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210003" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210004" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210005" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210006" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210007" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210008" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210009" x="1290" y="863" width="313" height="290" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210010" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210011" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210012" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210013" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210014" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210015" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210016" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210017" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210018" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210019" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character210020" x="1613" y="863" width="310" height="293" frameX="0" frameY="0" frameWidth="313" frameHeight="293"/>
+	<SubTexture name="Character220000" x="1933" y="863" width="310" height="274"/>
+	<SubTexture name="Character220001" x="2253" y="863" width="310" height="274"/>
+	<SubTexture name="Character220002" x="2573" y="863" width="310" height="274"/>
+	<SubTexture name="Character220003" x="2253" y="863" width="310" height="274"/>
+	<SubTexture name="Character230000" x="2893" y="863" width="333" height="274"/>
+	<SubTexture name="Character240000" x="3236" y="863" width="310" height="274"/>
+	<SubTexture name="Character240001" x="3556" y="863" width="310" height="274"/>
+	<SubTexture name="Character250000" x="10" y="1166" width="350" height="288" frameX="0" frameY="0" frameWidth="372" frameHeight="288"/>
+	<SubTexture name="Character250001" x="370" y="1166" width="355" height="288" frameX="0" frameY="0" frameWidth="372" frameHeight="288"/>
+	<SubTexture name="Character250002" x="735" y="1166" width="366" height="288" frameX="0" frameY="0" frameWidth="372" frameHeight="288"/>
+	<SubTexture name="Character250003" x="1111" y="1166" width="372" height="288"/>
+	<SubTexture name="Character30000" x="1493" y="1166" width="331" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30001" x="1493" y="1166" width="331" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30002" x="1834" y="1166" width="324" height="290" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30003" x="1834" y="1166" width="324" height="290" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30004" x="2168" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30005" x="2488" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30006" x="2488" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30007" x="2808" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30008" x="2808" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character30009" x="3128" y="1166" width="310" height="289" frameX="0" frameY="0" frameWidth="331" frameHeight="290"/>
+	<SubTexture name="Character40000" x="3448" y="1166" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40001" x="3448" y="1166" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40002" x="3448" y="1166" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40003" x="3768" y="1166" width="310" height="318" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40004" x="3768" y="1166" width="310" height="318" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40005" x="3768" y="1166" width="310" height="318" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40006" x="10" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40007" x="10" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40008" x="10" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40009" x="330" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40010" x="330" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40011" x="330" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40012" x="650" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40013" x="650" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40014" x="650" y="1496" width="310" height="310" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40015" x="970" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40016" x="970" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40017" x="970" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40018" x="1290" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40019" x="1290" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40020" x="1290" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40021" x="1610" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40022" x="1610" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40023" x="1610" y="1496" width="310" height="328"/>
+	<SubTexture name="Character40024" x="1930" y="1496" width="310" height="325" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40025" x="1930" y="1496" width="310" height="325" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40026" x="1930" y="1496" width="310" height="325" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40027" x="2250" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40028" x="2250" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40029" x="2250" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40030" x="2570" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40031" x="2570" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character40032" x="2570" y="1496" width="310" height="320" frameX="0" frameY="0" frameWidth="310" frameHeight="328"/>
+	<SubTexture name="Character50000" x="2890" y="1496" width="310" height="274"/>
+	<SubTexture name="Character50001" x="3210" y="1496" width="310" height="274"/>
+	<SubTexture name="Character50002" x="3530" y="1496" width="310" height="274"/>
+	<SubTexture name="Character50003" x="10" y="1834" width="310" height="274"/>
+	<SubTexture name="Character60000" x="330" y="1834" width="310" height="285" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60001" x="650" y="1834" width="310" height="286"/>
+	<SubTexture name="Character60002" x="970" y="1834" width="310" height="282" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60003" x="1290" y="1834" width="310" height="282" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60004" x="1610" y="1834" width="310" height="274" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60005" x="1930" y="1834" width="310" height="279" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60006" x="2250" y="1834" width="310" height="285" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60007" x="650" y="1834" width="310" height="286"/>
+	<SubTexture name="Character60008" x="970" y="1834" width="310" height="282" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60009" x="1290" y="1834" width="310" height="282" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60010" x="1610" y="1834" width="310" height="274" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character60011" x="1930" y="1834" width="310" height="279" frameX="0" frameY="0" frameWidth="310" frameHeight="286"/>
+	<SubTexture name="Character70000" x="2570" y="1834" width="319" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70001" x="2570" y="1834" width="319" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70002" x="2899" y="1834" width="320" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70003" x="2899" y="1834" width="320" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70004" x="3229" y="1834" width="322" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70005" x="3229" y="1834" width="322" height="274" frameX="0" frameY="0" frameWidth="323" frameHeight="274"/>
+	<SubTexture name="Character70006" x="3561" y="1834" width="323" height="274"/>
+	<SubTexture name="Character70007" x="3561" y="1834" width="323" height="274"/>
+	<SubTexture name="Character70008" x="10" y="2130" width="323" height="274"/>
+	<SubTexture name="Character70009" x="10" y="2130" width="323" height="274"/>
+	<SubTexture name="Character70010" x="343" y="2130" width="323" height="274"/>
+	<SubTexture name="Character70011" x="343" y="2130" width="323" height="274"/>
+	<SubTexture name="Character80000" x="676" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80001" x="996" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80002" x="1316" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80003" x="1636" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80004" x="1956" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80005" x="2276" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80006" x="2596" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80007" x="2916" y="2130" width="310" height="281"/>
+	<SubTexture name="Character80008" x="3236" y="2130" width="310" height="281"/>
+	<SubTexture name="Character90000" x="3556" y="2130" width="310" height="274"/>
+	<SubTexture name="Character90001" x="10" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90002" x="330" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90003" x="650" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90004" x="970" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90005" x="1290" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90006" x="1610" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90007" x="1930" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90008" x="2250" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90009" x="2570" y="2421" width="310" height="274"/>
+	<SubTexture name="Character90010" x="2890" y="2421" width="310" height="274"/>
+	<SubTexture name="Characternumber10000" x="3210" y="2421" width="310" height="274" frameX="-107" frameY="0" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10001" x="3210" y="2421" width="310" height="274" frameX="-107" frameY="0" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10002" x="3210" y="2421" width="310" height="274" frameX="-107" frameY="0" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10003" x="3210" y="2421" width="310" height="274" frameX="-107" frameY="0" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10004" x="3530" y="2421" width="522" height="177" frameX="0" frameY="-95" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10005" x="3530" y="2421" width="522" height="177" frameX="0" frameY="-95" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10006" x="3530" y="2421" width="522" height="177" frameX="0" frameY="-95" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber10007" x="3530" y="2421" width="522" height="177" frameX="0" frameY="-95" frameWidth="522" frameHeight="274"/>
+	<SubTexture name="Characternumber20000" x="10" y="2705" width="310" height="282"/>
+	<SubTexture name="Characternumber20001" x="330" y="2705" width="310" height="281" frameX="0" frameY="0" frameWidth="310" frameHeight="282"/>
+	<SubTexture name="Characternumber20002" x="650" y="2705" width="310" height="281" frameX="0" frameY="0" frameWidth="310" frameHeight="282"/>
+</TextureAtlas>

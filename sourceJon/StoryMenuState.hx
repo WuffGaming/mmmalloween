@@ -26,7 +26,10 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Sunshine', 'Withered', 'run'],
-		['Ron', 'Trouble', 'Onslaught']
+		['Ron', 'Trouble', 'Onslaught'],
+		['Moonrise', 'Ronman', 'Little-Man-Halloween'],
+		['Onslaught-DX', 'placeholder-shuffle', 'in-your-place'],
+		['($@($%()@_@#%@}{{{{']
 	];
 	var curDifficulty_1:Int = 1;
 	var curDifficulty_2:Int = 1;
@@ -34,6 +37,9 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true];
 
 	var weekCharacters:Array<Dynamic> = [
+		['bob', 'bf', 'gf'],
+		['bob', 'bf', 'gf'],
+		['bob', 'bf', 'gf'],
 		['bob', 'bf', 'gf'],
 		['bob', 'bf', 'gf']
 	];

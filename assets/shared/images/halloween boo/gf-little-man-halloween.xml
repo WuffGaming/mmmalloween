@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bob-ron.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ron bob bob eye0000" x="10" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0001" x="10" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0002" x="559" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0003" x="559" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0004" x="1108" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0005" x="1108" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0006" x="1657" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0007" x="1657" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0008" x="2206" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0009" x="2206" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0010" x="2755" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0011" x="2755" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0012" x="3304" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0013" x="3304" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0014" x="3304" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0015" x="3304" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0016" x="3304" y="10" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0017" x="10" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0018" x="10" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0019" x="559" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0020" x="559" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0021" x="1108" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0022" x="1108" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0023" x="1657" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0024" x="2206" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0025" x="2755" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0026" x="3304" y="585" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0027" x="10" y="1160" width="539" height="565" frameX="-3" frameY="-11" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0028" x="559" y="1160" width="539" height="566" frameX="-3" frameY="-10" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0029" x="1108" y="1160" width="539" height="567" frameX="-3" frameY="-9" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0030" x="1657" y="1160" width="540" height="569" frameX="-2" frameY="-7" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0031" x="2207" y="1160" width="541" height="580" frameX="-1" frameY="-4" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0032" x="2758" y="1160" width="542" height="604" frameX="0" frameY="0" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0033" x="3310" y="1160" width="681" height="378" frameX="-137" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0034" x="10" y="1774" width="681" height="379" frameX="-167" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0035" x="701" y="1774" width="680" height="379" frameX="-182" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0036" x="1391" y="1774" width="681" height="379" frameX="-187" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0037" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0038" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0039" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0040" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0041" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0042" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0043" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0044" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0045" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0046" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0047" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0048" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0049" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0050" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0051" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0052" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0053" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0054" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0055" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0056" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0057" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0058" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0059" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0060" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0061" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0062" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0063" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0064" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0065" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0066" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0067" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0068" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0069" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0070" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0071" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0072" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0073" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0074" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0075" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0076" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0077" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0078" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0079" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0080" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0081" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0082" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0083" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0084" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0085" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0086" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0087" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0088" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0089" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0090" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0091" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0092" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0093" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0094" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0095" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0096" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0097" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0098" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0099" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0100" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0101" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0102" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0103" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0104" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0105" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0106" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0107" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0108" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0109" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0110" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0111" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0112" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0113" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0114" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0115" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0116" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0117" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0118" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0119" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0120" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0121" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0122" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0123" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0124" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0125" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0126" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0127" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0128" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0129" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0130" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0131" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0132" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0133" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0134" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0135" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0136" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0137" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0138" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0139" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0140" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bob eye0141" x="2082" y="1774" width="681" height="379" frameX="-188" frameY="-234" frameWidth="869" frameHeight="613"/>
+	<SubTexture name="ron bob bop0000" x="2773" y="1774" width="580" height="567" frameX="0" frameY="-2" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0001" x="2773" y="1774" width="580" height="567" frameX="0" frameY="-2" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0002" x="3363" y="1774" width="582" height="563" frameX="0" frameY="-2" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0003" x="3363" y="1774" width="582" height="563" frameX="0" frameY="-2" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0004" x="10" y="2351" width="561" height="564" frameX="-22" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0005" x="10" y="2351" width="561" height="564" frameX="-22" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0006" x="581" y="2351" width="541" height="565" frameX="-39" frameY="0" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0007" x="581" y="2351" width="541" height="565" frameX="-39" frameY="0" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0008" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0009" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0010" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0011" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0012" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0013" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob bop0014" x="1132" y="2351" width="539" height="565" frameX="-41" frameY="-1" frameWidth="583" frameHeight="569"/>
+	<SubTexture name="ron bob missed0000" x="1681" y="2351" width="532" height="574" frameX="-5" frameY="0" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0001" x="1681" y="2351" width="532" height="574" frameX="-5" frameY="0" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0002" x="2223" y="2351" width="539" height="567" frameX="-1" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0003" x="2223" y="2351" width="539" height="567" frameX="-1" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0004" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0005" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0006" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0007" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0008" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0009" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0010" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0011" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0012" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0013" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+	<SubTexture name="ron bob missed0014" x="2772" y="2351" width="540" height="567" frameX="0" frameY="-7" frameWidth="540" frameHeight="574"/>
+</TextureAtlas>

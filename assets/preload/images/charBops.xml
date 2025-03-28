@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Untitled-1.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bopper0000" x="5" y="5" width="988" height="600"/>
+	<SubTexture name="bopper0001" x="998" y="5" width="988" height="600"/>
+	<SubTexture name="bopper0002" x="5" y="610" width="988" height="600"/>
+	<SubTexture name="bopper0003" x="998" y="610" width="988" height="600"/>
+	<SubTexture name="bopper0004" x="5" y="1215" width="988" height="600"/>
+	<SubTexture name="bopper0005" x="5" y="1215" width="988" height="600"/>
+	<SubTexture name="bopper0006" x="998" y="1215" width="988" height="600"/>
+	<SubTexture name="bopper0007" x="998" y="1215" width="988" height="600"/>
+	<SubTexture name="bopper0008" x="998" y="1215" width="988" height="600"/>
+	<SubTexture name="bopper0009" x="5" y="5" width="988" height="600"/>
+</TextureAtlas>

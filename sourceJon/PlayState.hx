@@ -737,7 +737,7 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'onslaught' :
+			case 'onslaught' | 'onslaught-dx':
 			{
 				defaultCamZoom = 0.9;
 				curStage = 'slaught';
@@ -810,6 +810,48 @@ class PlayState extends MusicBeatState
 				ground.active = false;
 				ground.antialiasing = true;
 				add(ground);
+					
+				}
+
+			case 'moonrise' | 'ronman' |'little-man-halloween' | '($@($%()@_@#%@}{{{{' :
+				{
+				defaultCamZoom = 0.9;
+				curStage = 'house';
+				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('halloween boo/house/bg'));
+				bg.updateHitbox();
+				bg.scale.x = 1.2;
+				bg.scale.y = 1.2;
+				bg.active = false;
+				bg.antialiasing = true;
+				bg.scrollFactor.set(0.1, 0.1);
+				add(bg);
+				
+				var home:FlxSprite = new FlxSprite(-537, -250).loadGraphic(Paths.image('halloween boo/house/house'));
+				home.updateHitbox();
+				home.active = false;
+				home.antialiasing = true;
+				add(home);
+					
+				}
+
+			case 'in-your-place':
+				{
+				defaultCamZoom = 0.9;
+				curStage = 'ow';
+				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('are you there'));
+				bg.updateHitbox();
+				bg.scale.x = 1.2;
+				bg.scale.y = 1.2;
+				bg.active = false;
+				bg.antialiasing = true;
+				bg.scrollFactor.set(0.1, 0.1);
+				add(bg);
+				
+				var lite:FlxSprite = new FlxSprite(-537, -250).loadGraphic(Paths.image('souls'));
+				lite.updateHitbox();
+				lite.active = false;
+				lite.antialiasing = true;
+				add(lite);
 					
 				}
 			default:
@@ -1048,7 +1090,8 @@ class PlayState extends MusicBeatState
 				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
 				if (FlxG.save.data.downscroll)
 					songName.y -= 3;
-				songName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+				songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+				songName.borderSize = 1.5;
 				songName.scrollFactor.set();
 				add(songName);
 				songName.cameras = [camHUD];
@@ -1071,6 +1114,7 @@ class PlayState extends MusicBeatState
 		// Add Kade Engine watermark
 		var kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0,SONG.song + " " + (storyDifficulty == 2 ? "Hard" : storyDifficulty == 1 ? "Normal" : "Easy") + " - KE " + MainMenuState.kadeEngineVer + " - " + (FlxG.save.data.etternaMode ? "E.Mode" : "FNF"), 16);
 		kadeEngineWatermark.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		kadeEngineWatermark.borderSize = 1.5;
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
 
@@ -1683,7 +1727,8 @@ class PlayState extends MusicBeatState
 			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
 			if (FlxG.save.data.downscroll)
 				songName.y -= 3;
-			songName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			songName.borderSize = 1.5;
 			songName.scrollFactor.set();
 			add(songName);
 
@@ -2885,7 +2930,7 @@ class PlayState extends MusicBeatState
 					currentTimingShown.color = FlxColor.CYAN;
 			}
 			currentTimingShown.borderStyle = OUTLINE;
-			currentTimingShown.borderSize = 1;
+			currentTimingShown.borderSize = 1.4;
 			currentTimingShown.borderColor = FlxColor.BLACK;
  			currentTimingShown.font = Paths.font("comic.ttf");
 			currentTimingShown.text = msTiming + "ms";
@@ -3951,7 +3996,7 @@ class PlayState extends MusicBeatState
 			{
 				var randomthing:FlxSprite = new FlxSprite(FlxG.random.int(300, 1077), FlxG.random.int(0, 622));
 				FlxG.sound.play(Paths.sound("pop_up"), 1);
-				randomthing.loadGraphic(Paths.image('bob/PopUps/popup' + FlxG.random.int(1,11), 'shared'));
+				randomthing.loadGraphic(Paths.image('bob/PopUps/popup' + FlxG.random.int(1,20), 'shared'));
 				randomthing.updateHitbox();
 				randomthing.alpha = 0;
 				randomthing.antialiasing = true;

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="littleman-ron.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ron little man boppin0000" x="10" y="10" width="337" height="484" frameX="0" frameY="-17" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0001" x="10" y="10" width="337" height="484" frameX="0" frameY="-17" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0002" x="357" y="10" width="326" height="489" frameX="-5" frameY="-12" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0003" x="357" y="10" width="326" height="489" frameX="-5" frameY="-12" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0004" x="693" y="10" width="308" height="495" frameX="-13" frameY="-6" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0005" x="693" y="10" width="308" height="495" frameX="-13" frameY="-6" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0006" x="10" y="515" width="305" height="501" frameX="-14" frameY="-1" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0007" x="10" y="515" width="305" height="501" frameX="-14" frameY="-1" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0008" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0009" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0010" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0011" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0012" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0013" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man boppin0014" x="325" y="515" width="305" height="502" frameX="-14" frameY="0" frameWidth="337" frameHeight="502"/>
+	<SubTexture name="ron little man missed0000" x="640" y="515" width="302" height="515" frameX="-2" frameY="0" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0001" x="640" y="515" width="302" height="515" frameX="-2" frameY="0" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0002" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0003" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0004" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0005" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0006" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0007" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0008" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0009" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0010" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0011" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0012" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0013" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+	<SubTexture name="ron little man missed0014" x="10" y="1040" width="304" height="511" frameX="0" frameY="-3" frameWidth="304" frameHeight="515"/>
+</TextureAtlas>
