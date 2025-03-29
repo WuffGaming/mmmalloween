@@ -934,6 +934,7 @@ class PlayState extends MusicBeatState
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
+	function repositionDad() {
 		switch (SONG.player2)
 		{
 			case 'gf':
@@ -944,80 +945,58 @@ class PlayState extends MusicBeatState
 					camPos.x += 600;
 					tweenCamIn();
 				}
-			case "spooky":
-				dad.y += 200;
-			case "monster":
-				dad.y += 100;
-			case 'monster-christmas':
-				dad.y += 130;
 			case 'dad':
 				camPos.x += 400;
-			case 'pico':
-				camPos.x += 600;
-				dad.y += 300;
 			case 'bob':
 				camPos.x += 600;
-				dad.y += 300;
+				dad.y = 400;
 			case 'gloop-bob':
 				camPos.x += 600;
-				dad.y += 300;
+				dad.y = 400;
 			case 'angrybob':
 				camPos.x += 600;
-				dad.y += 300;
+				dad.y = 400;
 			case 'hellbob':
 				camPos.x += 600;
-				dad.y += 350;
+				dad.y = 450;
 			case 'glitched-bob':
 				camPos.x += 600;
-				dad.y += 300;
+				dad.y = 400;
 			case 'moonrise-bob':
 				camPos.x += 600;
-				dad.y += 300;
+				dad.y = 400;
 			case 'oh-no':
 				camPos.x -= 70;
 				camPos.y -= 90;
-				dad.y += 30;
+				dad.y = 130;
 			case 'ron':
 				camPos.x -= 27;
 				camPos.y += 268;
-				dad.y += 268;
-				dad.x -= 27;
+				dad.y = 368;
+				dad.x = 73;
 			case 'ronman':
 				camPos.x -= 130;
-				dad.x -= 10;
-				dad.y += 190;
+				dad.x = 90;
+				dad.y = 290;
 			case 'ronman-evil':
 				camPos.x -= 130;
-				dad.x -= 10;
-				dad.y += 190;
+				dad.x = 90;
+				dad.y = 290;
 			case 'little-man':
 				camPos.x -= 124;
 				camPos.y += 644;
-				dad.x += 124;
-				dad.y += 644;
+				dad.x = 224;
+				dad.y = 744;
 			case 'little-man-2':
 				camPos.x -= 124;
 				camPos.y += 644;
-				dad.x += 124;
-				dad.y += 644;
-			case 'parents-christmas':
-				dad.x -= 500;
-			case 'senpai':
-				dad.x += 150;
-				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'senpai-angry':
-				dad.x += 150;
-				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'spirit':
-				dad.x -= 150;
-				dad.y += 100;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				dad.x = 224;
+				dad.y = 744;
 		}
+	}
 
+		repositionDad();
 
-		
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
 
 		// REPOSITIONING PER STAGE
@@ -1061,6 +1040,8 @@ class PlayState extends MusicBeatState
 				gf.y += 300;
 				dad.x += 150;
 				dad.y += 400;
+			case 'sunshine' | 'withered' | 'hellstage' | 'ron' | 'trouble' | 'slaught' | 'slaughts' | 'ow':
+				repositionDad();
 		}
 
 		add(gf);
