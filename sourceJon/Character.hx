@@ -533,19 +533,32 @@ class Character extends FlxSprite
 
 				flipX = true;
 
-				case 'gloop-bob':
-					tex = Paths.getSparrowAtlas('bob/oohscary');
-					frames = tex;
-					animation.addByPrefix('idle', "bob_idle", 24, false);
-					animation.addByPrefix('singUP', 'bob_UP', 24, false);
-					animation.addByPrefix('singDOWN', 'bob_DOWN', 24, false);
-					animation.addByPrefix('singLEFT', 'bob_LEFT', 24, false);
-					animation.addByPrefix('singRIGHT', 'bob_RIGHT', 24, false);
-					animation.addByPrefix('Transform', 'bob_transform', 24, false);
+			case 'moonrise-bob':
+				tex = Paths.getSparrowAtlas('halloween boo/bob');
+				frames = tex;
+				animation.addByPrefix('idle', "bob_idle", 24, false);
+				animation.addByPrefix('singUP', 'bob_UP', 24, false);
+				animation.addByPrefix('singDOWN', 'bob_DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'bob_LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'bob_RIGHT', 24, false);
+
+				addOffset('idle');
+
+				flipX = true;
+
+			case 'gloop-bob':
+				tex = Paths.getSparrowAtlas('bob/oohscary');
+				frames = tex;
+				animation.addByPrefix('idle', "bob_idle", 24, false);
+				animation.addByPrefix('singUP', 'bob_UP', 24, false);
+				animation.addByPrefix('singDOWN', 'bob_DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'bob_LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'bob_RIGHT', 24, false);
+				animation.addByPrefix('Transform', 'bob_transform', 24, false);
 	
-					addOffset('idle');
+				addOffset('idle');
 	
-					flipX = false;
+				flipX = false;
 				
 			case 'angrybob':
 				tex = Paths.getSparrowAtlas('bob/angrybob_asset');
@@ -581,6 +594,24 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
+
+			case 'oh-no':
+				tex = Paths.getSparrowAtlas('halloween boo/jesus-fucking-christ');
+				frames = tex;
+				animation.addByPrefix('idle', "Idle", 24);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -120, 177);
+				addOffset("singLEFT", -62, 0);
+				addOffset("singRIGHT", -17, -29);
+				addOffset("singDOWN", -84, -222);
+
+				playAnim('idle');
+
 			case 'ron':
 				tex = Paths.getSparrowAtlas('bob/Tankman');
 				frames = tex;
@@ -596,8 +627,51 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", -89, -51);
 				addOffset("singDOWN", 40, -120);
 				addOffset("Ugh", 71, -40);
+
+			case 'ronman':
+				tex = Paths.getSparrowAtlas('halloween boo/ron');
+				frames = tex;
+				animation.addByPrefix('idle', "RON_idle", 24);
+				animation.addByPrefix('singUP', 'RONup', 24, false);
+				animation.addByPrefix('singDOWN', 'RONdown', 24, false);
+				animation.addByPrefix('singLEFT', 'RONleft', 24, false);
+				animation.addByPrefix('singRIGHT', 'RONright', 24, false);
+				addOffset('idle');
+				addOffset("singUP", 459, 999);
+				addOffset("singLEFT", 217, 167);
+				addOffset("singRIGHT", 48, -376);
+				addOffset("singDOWN", 30, -116);
+
+			case 'ronman-evil':
+				tex = Paths.getSparrowAtlas('halloween boo/ron');
+				frames = tex;
+				animation.addByPrefix('idle', "RON_mischievous_idle", 24);
+				animation.addByPrefix('singUP', 'RONup', 24, false);
+				animation.addByPrefix('singDOWN', 'RONdown', 24, false);
+				animation.addByPrefix('singLEFT', 'RONleft', 24, false);
+				animation.addByPrefix('singRIGHT', 'RONright', 24, false);
+				addOffset('idle', 17, -15);
+				addOffset("singUP", 459, 999);
+				addOffset("singLEFT", 217, 167);
+				addOffset("singRIGHT", 48, -376);
+				addOffset("singDOWN", 30, -116);
+
 			case 'little-man':
 					tex = Paths.getSparrowAtlas('Small_Guy');
+					frames = tex;
+					animation.addByPrefix('idle', "idle", 24);
+					animation.addByPrefix('singUP', 'up', 24, false);
+					animation.addByPrefix('singDOWN', 'down', 24, false);
+					animation.addByPrefix('singLEFT', 'left', 24, false);
+					animation.addByPrefix('singRIGHT', 'right', 24, false);
+					addOffset('idle');
+					addOffset("singUP", -10, 8);
+					addOffset("singLEFT", -8, 0);
+					addOffset("singRIGHT", 0, 2);
+					addOffset("singDOWN", 0, -10);
+
+			case 'little-man-2':
+					tex = Paths.getSparrowAtlas('halloween boo/little-man');
 					frames = tex;
 					animation.addByPrefix('idle', "idle", 24);
 					animation.addByPrefix('singUP', 'up', 24, false);

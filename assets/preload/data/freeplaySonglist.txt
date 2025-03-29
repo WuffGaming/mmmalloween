@@ -104,9 +104,9 @@ Ron:ron:2
 Trouble:gloop-bob:2
 Onslaught:glitched-bob:2
 Little-man:little-man:2
-Moonrise:ron:2
-Ronman:ron:2
-Little-Man-Halloween:ron:2
-Onslaught-DX:ron:2
+Moonrise:moonrise-bob:2
+Ronman:ronman:2
+Little-Man-Halloween:little-man-2:2
+Onslaught-DX:glitched-bob:2
 placeholder-shuffle:ron:2
 in-your-place:ron:2

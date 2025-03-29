@@ -45,6 +45,10 @@ class HealthIcon extends FlxSprite
 		animation.add('gloop-bob', [32, 33], 0, false, isPlayer);
 		animation.add('little-man', [36, 37], 0, false, isPlayer);
 		animation.add('pizza', [38, 39], 0, false, isPlayer);
+		animation.add('moonrise-bob', [40, 41], 0, false, isPlayer);
+		animation.add('ronman', [42, 43], 0, false, isPlayer);
+		animation.add('little-man-2', [44, 45], 0, false, isPlayer);
+		animation.add('oh-no', [46, 47], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}

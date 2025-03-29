@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bf",
-		"player2": "littleman-fart",
+		"player2": "little-man-2",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -16823,7 +16823,7 @@
 			}
 		],
 		"player3": "bob-ron",
-		"song": "Little Man Halloween",
+		"song": "Little-Man-Halloween",
 		"stage": "house",
 		"needsVoices": true,
 		"validScore": true,

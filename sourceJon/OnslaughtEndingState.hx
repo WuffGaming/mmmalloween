@@ -91,10 +91,10 @@ class OnslaughtEndingState extends FlxState
 										texty.text = "maybe ill see you again in the future";
 										new FlxTimer().start(3, function(deadTime:FlxTimer)
 										{
-											texty.text = "who knows";
+											texty.text = "actually, i know i will.";
 											new FlxTimer().start(3, function(deadTime:FlxTimer)
 											{
-												texty.text = "but rest easy knowing that i'll be here, watching";
+												texty.text = "be prepared.";
 												new FlxTimer().start(3, function(deadTime:FlxTimer)
 												{
 													FlxG.sound.playMusic(Paths.music("ouch"),1);

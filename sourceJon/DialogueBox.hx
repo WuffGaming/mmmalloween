@@ -86,14 +86,14 @@ class DialogueBox extends FlxSpriteGroup
 				box.frames = Paths.getSparrowAtlas('bob/dialogueBox-bobevil');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-			case 'little-man':
-				hasDialog = false;
-			default:
+			case 'sunshine' | 'ron' | 'trouble' | 'onslaught':
 				box = new FlxSprite(0, 0);
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('bob/dialogueBox-bob');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+			default:
+				hasDialog = false;
 		}
 
 		this.dialogueList = dialogueList;

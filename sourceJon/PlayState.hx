@@ -737,10 +737,31 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'onslaught' | 'onslaught-dx':
+			case 'onslaught':
 			{
 				defaultCamZoom = 0.9;
 				curStage = 'slaught';
+				var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('bob/scary_sky'));
+				bg.updateHitbox();
+				bg.active = false;
+				bg.antialiasing = true;
+				bg.scrollFactor.set(0.1, 0.1);
+				add(bg);
+				/*var glitchEffect = new FlxGlitchEffect(8,10,0.4,FlxGlitchDirection.HORIZONTAL);
+				var glitchSprite = new FlxEffectSprite(bg, [glitchEffect]);
+				add(glitchSprite);*/
+				
+				var ground:FlxSprite = new FlxSprite(-537, -158).loadGraphic(Paths.image('bob/GlitchedGround'));
+				ground.updateHitbox();
+				ground.active = false;
+				ground.antialiasing = true;
+				add(ground);
+				
+			}
+			case 'onslaught-dx':
+			{
+				defaultCamZoom = 0.9;
+				curStage = 'slaughts';
 				var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('bob/scary_sky'));
 				bg.updateHitbox();
 				bg.active = false;
@@ -813,20 +834,26 @@ class PlayState extends MusicBeatState
 					
 				}
 
-			case 'moonrise' | 'ronman' |'little-man-halloween' | '($@($%()@_@#%@}{{{{' :
+			case 'moonrise' | 'ronman' | 'little-man-halloween' | '($@($%()@_@#%@}{{{{' :
 				{
 				defaultCamZoom = 0.9;
 				curStage = 'house';
 				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('halloween boo/house/bg'));
+				if (curSong.toLowerCase() == '($@($%()@_@#%@}{{{{')
+				{
+				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('halloween boo/scary/silly_type_beat'));
+				}
 				bg.updateHitbox();
-				bg.scale.x = 1.2;
-				bg.scale.y = 1.2;
 				bg.active = false;
 				bg.antialiasing = true;
-				bg.scrollFactor.set(0.1, 0.1);
+				bg.scrollFactor.set(1.1, 1.1);
 				add(bg);
 				
-				var home:FlxSprite = new FlxSprite(-537, -250).loadGraphic(Paths.image('halloween boo/house/house'));
+				var home:FlxSprite = new FlxSprite(-130, 0).loadGraphic(Paths.image('halloween boo/house/house'));
+				if (curSong.toLowerCase() == '($@($%()@_@#%@}{{{{')
+				{
+				var home:FlxSprite = new FlxSprite(-130, 0).loadGraphic(Paths.image('halloween boo/scary/EVILBob_halloween_1'));
+				}
 				home.updateHitbox();
 				home.active = false;
 				home.antialiasing = true;
@@ -836,12 +863,12 @@ class PlayState extends MusicBeatState
 
 			case 'in-your-place':
 				{
-				defaultCamZoom = 0.9;
+				defaultCamZoom = 0.1;
 				curStage = 'ow';
 				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('are you there'));
 				bg.updateHitbox();
-				bg.scale.x = 1.2;
-				bg.scale.y = 1.2;
+				bg.scale.x = 1.5;
+				bg.scale.y = 1.5;
 				bg.active = false;
 				bg.antialiasing = true;
 				bg.scrollFactor.set(0.1, 0.1);
@@ -882,6 +909,7 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 			}
 		}
+
 		var gfVersion:String = 'gf';
 
 		switch (curStage)
@@ -916,7 +944,6 @@ class PlayState extends MusicBeatState
 					camPos.x += 600;
 					tweenCamIn();
 				}
-
 			case "spooky":
 				dad.y += 200;
 			case "monster":
@@ -943,12 +970,32 @@ class PlayState extends MusicBeatState
 			case 'glitched-bob':
 				camPos.x += 600;
 				dad.y += 300;
+			case 'moonrise-bob':
+				camPos.x += 600;
+				dad.y += 300;
+			case 'oh-no':
+				camPos.x -= 70;
+				camPos.y -= 90;
+				dad.y += 30;
 			case 'ron':
 				camPos.x -= 27;
 				camPos.y += 268;
 				dad.y += 268;
 				dad.x -= 27;
+			case 'ronman':
+				camPos.x -= 130;
+				dad.x -= 10;
+				dad.y += 190;
+			case 'ronman-evil':
+				camPos.x -= 130;
+				dad.x -= 10;
+				dad.y += 190;
 			case 'little-man':
+				camPos.x -= 124;
+				camPos.y += 644;
+				dad.x += 124;
+				dad.y += 644;
+			case 'little-man-2':
 				camPos.x -= 124;
 				camPos.y += 644;
 				dad.x += 124;
@@ -1007,6 +1054,13 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
+			case 'house':
+				boyfriend.x += 700;
+				boyfriend.y += 425;
+				gf.x += 700;
+				gf.y += 300;
+				dad.x += 150;
+				dad.y += 400;
 		}
 
 		add(gf);
