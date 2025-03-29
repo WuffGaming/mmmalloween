@@ -714,6 +714,59 @@ class Character extends FlxSprite
 				addOffset("singLEFT-alt", 98, -27);
 				addOffset("singRIGHT-alt", -89, -51);
 				addOffset("singDOWN-alt", 40, -120);
+			case 'placeholder-guy':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('halloween boo/placeholder-lad');
+				frames = tex;
+				animation.addByPrefix('idle', 'PlaceholderIdle', 24, false);
+				animation.addByPrefix('singUP', 'PlaceholderUp', 24, false);
+				animation.addByPrefix('singRIGHT', 'PlaceholderRight', 24, false);
+				animation.addByPrefix('singDOWN', 'PlaceholderDown', 24, false);
+				animation.addByPrefix('singLEFT', 'PlaceholderLeft', 24, false);
+				animation.addByPrefix('Death', 'RIP_placeholderguy:pray:', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 5, 21);
+				addOffset("singRIGHT", -1, -25);
+				addOffset("singLEFT", 101, -28);
+				addOffset("singDOWN", 6, -42);
+				addOffset("Death", 1200, 2000);
+
+				playAnim('idle');
+			case 'placeholder-guy-scared':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('halloween boo/placeholder-lad');
+				frames = tex;
+				animation.addByPrefix('idle', 'PlaceholderScaleIdle', 24, false);
+				animation.addByPrefix('singUP', 'PlaceholderScaredUp', 24, false);
+				animation.addByPrefix('singRIGHT', 'PlaceholderScaredRight', 24, false);
+				animation.addByPrefix('singDOWN', 'PlaceholderScaredDown', 24, false);
+				animation.addByPrefix('singLEFT', 'PlaceholderScaredLeft', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 5, 21);
+				addOffset("singRIGHT", -1, -25);
+				addOffset("singLEFT", 101, -28);
+				addOffset("singDOWN", 6, -42);
+
+				playAnim('idle');
+			case 'hand-guy':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('halloween boo/placeholder-lad');
+				frames = tex;
+				animation.addByPrefix('idle', 'PlaceholderPossesedIdle', 24, true);
+				animation.addByPrefix('singUP', 'PlaceholderPossesedUp', 24, false);
+				animation.addByPrefix('singRIGHT', 'PlaceholderPossesedRight', 24, false);
+				animation.addByPrefix('singDOWN', 'PlaceholderPossesedDown', 24, false);
+				animation.addByPrefix('singLEFT', 'PlaceholderPossesedLeft', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -35, 118);
+				addOffset("singRIGHT", -34, -62);
+				addOffset("singLEFT", 367, -54);
+				addOffset("singDOWN", -31, -223);
+
+				playAnim('idle');
 		}
 
 		dance();

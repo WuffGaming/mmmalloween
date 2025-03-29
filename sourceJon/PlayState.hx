@@ -865,16 +865,16 @@ class PlayState extends MusicBeatState
 				{
 				defaultCamZoom = 0.1;
 				curStage = 'ow';
-				var bg:FlxSprite = new FlxSprite(-100,10).loadGraphic(Paths.image('are you there'));
+				var bg:FlxSprite = new FlxSprite(-700,-2200).loadGraphic(Paths.image('are you there'));
 				bg.updateHitbox();
-				bg.scale.x = 1.5;
-				bg.scale.y = 1.5;
+				bg.scale.x = 6;
+				bg.scale.y = 6;
 				bg.active = false;
 				bg.antialiasing = true;
 				bg.scrollFactor.set(0.1, 0.1);
 				add(bg);
 				
-				var lite:FlxSprite = new FlxSprite(-537, -250).loadGraphic(Paths.image('souls'));
+				var lite:FlxSprite = new FlxSprite(275, 725).loadGraphic(Paths.image('souls'));
 				lite.updateHitbox();
 				lite.active = false;
 				lite.antialiasing = true;
@@ -947,6 +947,15 @@ class PlayState extends MusicBeatState
 				}
 			case 'dad':
 				camPos.x += 400;
+			case 'placeholder-guy':
+				dad.x = 170;
+				dad.y = 440;
+			case 'placeholder-guy-scared':
+				dad.x = 170;
+				dad.y = 440;
+			case 'hand-guy':
+				dad.x = 110;
+				dad.y = 180;
 			case 'bob':
 				camPos.x += 600;
 				dad.y = 400;
@@ -975,11 +984,12 @@ class PlayState extends MusicBeatState
 				dad.y = 368;
 				dad.x = 73;
 			case 'ronman':
-				camPos.x -= 130;
+				camPos.y = 500;
 				dad.x = 90;
 				dad.y = 290;
 			case 'ronman-evil':
 				camPos.x -= 130;
+				camPos.y += 300;
 				dad.x = 90;
 				dad.y = 290;
 			case 'little-man':
@@ -989,8 +999,8 @@ class PlayState extends MusicBeatState
 				dad.y = 744;
 			case 'little-man-2':
 				camPos.x -= 124;
-				camPos.y += 644;
-				dad.x = 224;
+				camPos.y += 400;
+				dad.x = 300;
 				dad.y = 744;
 		}
 	}

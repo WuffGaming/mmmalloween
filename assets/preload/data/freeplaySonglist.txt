@@ -108,5 +108,6 @@ Moonrise:moonrise-bob:2
 Ronman:ronman:2
 Little-Man-Halloween:little-man-2:2
 Onslaught-DX:glitched-bob:2
-placeholder-shuffle:ron:2
-in-your-place:ron:2
+placeholder-shuffle:placeholder-guy:2
+in-your-place:hand-guy:2
+($@($%()@_@#%@}{{{{:oh-no:2
