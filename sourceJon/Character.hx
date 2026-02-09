@@ -632,15 +632,19 @@ class Character extends FlxSprite
 				tex = Paths.getSparrowAtlas('halloween boo/ron');
 				frames = tex;
 				animation.addByPrefix('idle', "RON_idle", 24);
+				animation.addByPrefix('idle-alt', "RON_mischievous_idle", 24);
 				animation.addByPrefix('singUP', 'RONup', 24, false);
 				animation.addByPrefix('singDOWN', 'RONdown', 24, false);
 				animation.addByPrefix('singLEFT', 'RONleft', 24, false);
 				animation.addByPrefix('singRIGHT', 'RONright', 24, false);
+				animation.addByPrefix('hey', 'RON_dead', 24, false);
 				addOffset('idle');
+				addOffset('idle-alt', 17, -15);
 				addOffset("singUP", 459, 999);
 				addOffset("singLEFT", 217, 167);
 				addOffset("singRIGHT", 48, -376);
 				addOffset("singDOWN", 30, -116);
+				addOffset('hey', 60, -389);
 
 			case 'ronman-evil':
 				tex = Paths.getSparrowAtlas('halloween boo/ron');
@@ -650,11 +654,13 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'RONdown', 24, false);
 				animation.addByPrefix('singLEFT', 'RONleft', 24, false);
 				animation.addByPrefix('singRIGHT', 'RONright', 24, false);
+				animation.addByPrefix('hey', 'RON_dead', 24, false);
 				addOffset('idle', 17, -15);
 				addOffset("singUP", 459, 999);
 				addOffset("singLEFT", 217, 167);
 				addOffset("singRIGHT", 48, -376);
 				addOffset("singDOWN", 30, -116);
+				addOffset('hey', 60, -389);
 
 			case 'little-man':
 					tex = Paths.getSparrowAtlas('Small_Guy');
@@ -827,12 +833,13 @@ class Character extends FlxSprite
 	private var danced:Bool = false;
 
 	/**
-	 * FOR GF DANCING SHIT
+	 * FOR DANCING SHIT
 	 */
-	public function dance()
+	public function dance(alt:Bool = false)
 	{
 		if (!debugMode)
 		{
+			var fuckYou:String = alt ? '-alt' : '';
 			switch (curCharacter)
 			{
 				case 'gf':
@@ -841,51 +848,12 @@ class Character extends FlxSprite
 						danced = !danced;
 
 						if (danced)
-							playAnim('danceRight');
+							playAnim('danceRight' + fuckYou, true);
 						else
-							playAnim('danceLeft');
+							playAnim('danceLeft' + fuckYou, true);
 					}
-
-				case 'gf-christmas':
-					if (!animation.curAnim.name.startsWith('hair'))
-					{
-						danced = !danced;
-
-						if (danced)
-							playAnim('danceRight');
-						else
-							playAnim('danceLeft');
-					}
-
-				case 'gf-car':
-					if (!animation.curAnim.name.startsWith('hair'))
-					{
-						danced = !danced;
-
-						if (danced)
-							playAnim('danceRight');
-						else
-							playAnim('danceLeft');
-					}
-				case 'gf-pixel':
-					if (!animation.curAnim.name.startsWith('hair'))
-					{
-						danced = !danced;
-
-						if (danced)
-							playAnim('danceRight');
-						else
-							playAnim('danceLeft');
-					}
-				case 'spooky':
-					danced = !danced;
-
-					if (danced)
-						playAnim('danceRight');
-					else
-						playAnim('danceLeft');
 				default:
-					playAnim('idle');
+					playAnim('idle' + fuckYou, true);
 			}
 		}
 	}

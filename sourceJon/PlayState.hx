@@ -115,6 +115,7 @@ class PlayState extends MusicBeatState
 	private var strumLineNotes:FlxTypedGroup<FlxSprite>;
 	private var playerStrums:FlxTypedGroup<FlxSprite>;
 
+	public var idleAlt:Bool = false;
 	private var camZooming:Bool = false;
 	private var curSong:String = "";
 
@@ -984,7 +985,8 @@ class PlayState extends MusicBeatState
 				dad.y = 368;
 				dad.x = 73;
 			case 'ronman':
-				camPos.y = 500;
+				camPos.x -= 160;
+				camPos.y += 300;
 				dad.x = 90;
 				dad.y = 290;
 			case 'ronman-evil':
@@ -1218,41 +1220,6 @@ class PlayState extends MusicBeatState
 		{
 			switch (curSong.toLowerCase())
 			{
-				case "winter-horrorland":
-					var blackScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
-					add(blackScreen);
-					blackScreen.scrollFactor.set();
-					camHUD.visible = false;
-
-					new FlxTimer().start(0.1, function(tmr:FlxTimer)
-					{
-						remove(blackScreen);
-						FlxG.sound.play(Paths.sound('Lights_Turn_On'));
-						camFollow.y = -2050;
-						camFollow.x += 200;
-						FlxG.camera.focusOn(camFollow.getPosition());
-						FlxG.camera.zoom = 1.5;
-
-						new FlxTimer().start(0.8, function(tmr:FlxTimer)
-						{
-							camHUD.visible = true;
-							remove(blackScreen);
-							FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 2.5, {
-								ease: FlxEase.quadInOut,
-								onComplete: function(twn:FlxTween)
-								{
-									startCountdown();
-								}
-							});
-						});
-					});
-				case 'senpai':
-					schoolIntro(doof);
-				case 'roses':
-					FlxG.sound.play(Paths.sound('ANGRY'));
-					schoolIntro(doof);
-				case 'thorns':
-					schoolIntro(doof);
 				case 'sunshine':
 					schoolIntro(doof);
 				case 'withered':
@@ -1365,29 +1332,7 @@ class PlayState extends MusicBeatState
 			});
 		}
 	function ONSLAUGHTIntro(?dialogueBox:DialogueBox):Void
-	{
-		/*
-		var RONDIESIHATERON:FlxSprite = new FlxSprite(600, 400);
-		RONDIESIHATERON.frames = Paths.getSparrowAtlas('bob/cutscene/IHATERON');
-		RONDIESIHATERON.animation.addByPrefix('idle', 'RonDied', 24,false);
-		RONDIESIHATERON.animation.play('idle');
-		RONDIESIHATERON.scrollFactor.set();
-		RONDIESIHATERON.updateHitbox();
-		RONDIESIHATERON.screenCenter();
-		RONDIESIHATERON.scale.x = 1.12;
-		RONDIESIHATERON.scale.y = 1.12;
-		add(RONDIESIHATERON);
-		FlxG.sound.play(Paths.sound('IHATERON'), 1, false, null, true, function()
-			{
-				remove(RONDIESIHATERON);
-				FlxG.camera.fade(FlxColor.BLACK, 1, true, function()
-					{
-						camHUD.visible = true;
-						add(dialogueBox);
-					}, true);
-			});
-		*/
-		
+	{	
 		camHUD.visible = false;
 
 		FlxG.camera.fade(FlxColor.BLACK, 1, true, function()
@@ -1478,14 +1423,9 @@ class PlayState extends MusicBeatState
 			
 				
 		//not bob :(
-		if (SONG.song.toLowerCase() == 'roses' || SONG.song.toLowerCase() == 'thorns' || SONG.song.toLowerCase() == 'run')
+		if (SONG.song.toLowerCase() == 'run')
 		{
 			remove(black);
-
-			if (SONG.song.toLowerCase() == 'thorns')
-			{
-				add(red);
-			}
 			if (SONG.song.toLowerCase() == 'run')
 			{
 				camHUD.visible = false;
@@ -1627,12 +1567,12 @@ class PlayState extends MusicBeatState
 			{
 				if (curBeat <= 500)
 				{
-					dad.dance();
+					dad.dance(idleAlt);
 				}
 			}
 			else
 			{
-				dad.dance();
+				dad.dance(idleAlt);
 			}
 			gf.dance();
 			boyfriend.playAnim('idle');
@@ -3887,11 +3827,6 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
-		if (dad.curCharacter == 'spooky' && curStep % 4 == 2)
-		{
-			// dad.dance();
-		}
-
 
 		// yes this updates every step.
 		// yes this is bad
@@ -3929,39 +3864,10 @@ class PlayState extends MusicBeatState
 
 			// Dad doesnt interupt his own notes
 			if (SONG.notes[Math.floor(curStep / 16)].mustHitSection)
-				dad.dance();
+				dad.dance(idleAlt);
 		}
 		// FlxG.log.add('change bpm' + SONG.notes[Std.int(curStep / 16)].changeBPM);
 		wiggleShit.update(Conductor.crochet);
-
-		// HARDCODING FOR MILF ZOOMS!
-		if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.35)
-		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
-		}
-		
-		if (curSong.toLowerCase() == 'onslaught' && curBeat >= 0 && curBeat < 64 && camZooming && FlxG.camera.zoom < 1.35)
-		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
-		}
-		else if (curSong.toLowerCase() == 'onslaught' && curBeat >= 96 && curBeat < 224 && camZooming && FlxG.camera.zoom < 1.35)
-		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
-		}
-		else if (curSong.toLowerCase() == 'onslaught' && curBeat >= 240 && curBeat < 352 && camZooming && FlxG.camera.zoom < 1.35)
-		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
-		}
-		
-		if (camZooming && FlxG.camera.zoom < 1.35 && curBeat % 4 == 0)
-		{
-			FlxG.camera.zoom += 0.015;
-			camHUD.zoom += 0.03;
-		}
 
 		iconP1.setGraphicSize(Std.int(iconP1.width + 30));
 		iconP2.setGraphicSize(Std.int(iconP2.width + 30));
@@ -3984,6 +3890,21 @@ class PlayState extends MusicBeatState
 					bruh.destroy();
 				}
 			});
+		}
+		// handle like gapple because holy shit this is messy
+		switch (curSong.toLowerCase())
+		{
+			case 'ronman':
+				switch(curBeat)
+					{
+						case 17 | 19 | 21 | 23 | 25 | 27 | 29:
+							dad.playAnim('hey', false);
+						case 18 | 20 | 22 | 24 | 26 | 28 | 30:
+							dad.playAnim('idle', false);
+						// just so it properly loops. else, he just stays dead!
+						case 288:
+							idleAlt = true;
+					}
 		}
 		if (curSong == 'Ron')
 		{
@@ -4114,49 +4035,10 @@ class PlayState extends MusicBeatState
 		}
 		switch (curStage)
 		{
-			case 'school':
-				bgGirls.dance();
-			
 			case 'hellstage':
 				
 				if (FlxG.random.bool(10) && isbobmad && curSong.toLowerCase() == 'run' && !FlxG.save.data.jumpscare)
 					Bobismad();
-				
-			case 'mall':
-				upperBoppers.animation.play('bop', true);
-				bottomBoppers.animation.play('bop', true);
-				santa.animation.play('idle', true);
-
-			case 'limo':
-				grpLimoDancers.forEach(function(dancer:BackgroundDancer)
-				{
-					dancer.dance();
-				});
-
-				if (FlxG.random.bool(10) && fastCarCanDrive)
-					fastCarDrive();
-			case "philly":
-				if (!trainMoving)
-					trainCooldown += 1;
-
-				if (curBeat % 4 == 0)
-				{
-					phillyCityLights.forEach(function(light:FlxSprite)
-					{
-						light.visible = false;
-					});
-
-					curLight = FlxG.random.int(0, phillyCityLights.length - 1);
-
-					phillyCityLights.members[curLight].visible = true;
-					// phillyCityLights.members[curLight].alpha = 1;
-				}
-
-				if (curBeat % 8 == 4 && FlxG.random.bool(30) && !trainMoving && trainCooldown > 8)
-				{
-					trainCooldown = FlxG.random.int(-4, 0);
-					trainStart();
-				}
 		}
 
 		if (isHalloween && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
