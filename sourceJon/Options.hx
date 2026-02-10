@@ -135,6 +135,27 @@ class HappyVersion extends Option
 		return "happy version " + (!FlxG.save.data.happybob ? "off" : "on");
 	}
 }
+
+// i hate having ratings on the camera so bad im so sorry
+class RatingCamera extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+	public override function press():Bool
+	{
+		FlxG.save.data.cameraRating = !FlxG.save.data.cameraRating;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Ratings on Camera " + (!FlxG.save.data.cameraRating ? "off" : "on");
+	}
+}
 class ShakingScreen extends Option
 {
 	public function new(desc:String)

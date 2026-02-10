@@ -36,6 +36,9 @@ class KadeEngineData
 			FlxG.save.data.changedHit = false;
 		}
 
+		if (FlxG.save.data.cameraRating == null)
+			FlxG.save.data.cameraRating = false;
+
 		if (FlxG.save.data.fpsRain == null)
 			FlxG.save.data.fpsRain = false;
 

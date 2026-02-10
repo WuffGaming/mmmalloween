@@ -4,6 +4,7 @@ import SndTV;
 using StringTools;
 
 //praise delahee, i'll figure out what this shit means later!
+// i wont though ;)
 
 class Channel {
 	public var		name:String;
