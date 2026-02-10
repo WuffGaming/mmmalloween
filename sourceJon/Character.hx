@@ -493,6 +493,8 @@ class Character extends FlxSprite
 						else
 							playAnim('danceLeft' + fuckYou, true);
 					}
+				case 'hand-guy':
+					playAnim('idle' + fuckYou, false);
 				default:
 					playAnim('idle' + fuckYou, true);
 			}

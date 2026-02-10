@@ -181,6 +181,7 @@ class PlayState extends MusicBeatState
 	var songScoreDef:Int = 0;
 	var scoreTxt:FlxText;
 	var replayTxt:FlxText;
+	var thunderBlack:FlxSprite;
 
 	public static var campaignScore:Int = 0;
 
@@ -319,7 +320,7 @@ class PlayState extends MusicBeatState
 			
 			case 'withered' :
 			{
-				var bg:FlxSprite = new FlxSprite( -100).loadGraphic(Paths.image('bob/slightlyannyoed_sky'));
+				var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('bob/slightlyannyoed_sky'));
 				bg.updateHitbox();
 				bg.active = false;
 				bg.antialiasing = true;
@@ -555,13 +556,7 @@ class PlayState extends MusicBeatState
 					bg.active = false;
 					add(bg);
 
-					var thingidk:FlxSprite = new FlxSprite( -271).loadGraphic(Paths.image('bob/happy/middlething'));
-					thingidk.updateHitbox();
-					thingidk.active = false;
-					thingidk.antialiasing = true;
-					thingidk.scrollFactor.set(0.3, 0.3);
-					add(thingidk);
-					// lool
+					// umb
 
 					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -601,8 +596,6 @@ class PlayState extends MusicBeatState
 					camPos.x += 600;
 					tweenCamIn();
 				}
-			case 'dad':
-				camPos.x += 400;
 			case 'placeholder-guy':
 				dad.x = 170;
 				dad.y = 440;
@@ -709,6 +702,11 @@ class PlayState extends MusicBeatState
 
 		Conductor.songPosition = -5000;
 
+		thunderBlack = new FlxSprite().makeGraphic(FlxG.width * 4, FlxG.height * 4, FlxColor.BLACK);
+		thunderBlack.screenCenter();
+		thunderBlack.alpha = 0;
+		add(thunderBlack);
+
 
 		strumLine = new FlxSprite(0, 50).makeGraphic(FlxG.width, 10);
 		strumLine.scrollFactor.set();
@@ -763,11 +761,12 @@ class PlayState extends MusicBeatState
 				songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
 				add(songPosBar);
 	
-				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
+				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,SONG.song, 16);
 				if (FlxG.save.data.downscroll)
 					songName.y -= 3;
-				songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+				songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 				songName.borderSize = 1.5;
+				songName.screenCenter(X);
 				songName.scrollFactor.set();
 				add(songName);
 				songName.cameras = [camHUD];
@@ -822,6 +821,7 @@ class PlayState extends MusicBeatState
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);
 
+		thunderBlack.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
@@ -1292,12 +1292,13 @@ class PlayState extends MusicBeatState
 			songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
 			add(songPosBar);
 
-			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
+			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,SONG.song, 16);
 			if (FlxG.save.data.downscroll)
 				songName.y -= 3;
-			songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 			songName.borderSize = 1.5;
 			songName.scrollFactor.set();
+			songName.screenCenter(X);
 			add(songName);
 
 			songPosBG.cameras = [camHUD];
@@ -3481,6 +3482,15 @@ class PlayState extends MusicBeatState
 		// handle like gapple because holy shit this is messy
 		switch (curSong.toLowerCase())
 		{
+			case 'moonrise':
+				switch(curBeat)
+				{
+					case 145:
+						FlxTween.tween(thunderBlack, {alpha: 1}, 4);
+					case 160:
+						thunderBlack.alpha = 0;
+						FlxG.camera.flash(FlxColor.WHITE, 1);
+				}
 			case 'ronman':
 				switch(curBeat)
 					{
