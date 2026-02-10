@@ -407,65 +407,6 @@ class PlayState extends MusicBeatState
 				bobsound = new FlxSound().loadEmbedded(Paths.sound('bobscreen'));
 				
 			}
-			
-			
-			
-			case 'thorns':
-			{
-					curStage = 'schoolEvil';
-
-					var waveEffectBG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 3, 2);
-					var waveEffectFG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 5, 2);
-
-					var posX = 400;
-						var posY = 200;
-
-					var bg:FlxSprite = new FlxSprite(posX, posY);
-					bg.frames = Paths.getSparrowAtlas('weeb/animatedEvilSchool');
-					bg.animation.addByPrefix('idle', 'background 2', 24);
-					bg.animation.play('idle');
-					bg.scrollFactor.set(0.8, 0.9);
-					bg.scale.set(6, 6);
-					add(bg);
-
-					/* 
-							var bg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolBG'));
-							bg.scale.set(6, 6);
-							// bg.setGraphicSize(Std.int(bg.width * 6));
-							// bg.updateHitbox();
-							add(bg);
-							var fg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolFG'));
-							fg.scale.set(6, 6);
-							// fg.setGraphicSize(Std.int(fg.width * 6));
-							// fg.updateHitbox();
-							add(fg);
-							wiggleShit.effectType = WiggleEffectType.DREAMY;
-							wiggleShit.waveAmplitude = 0.01;
-							wiggleShit.waveFrequency = 60;
-							wiggleShit.waveSpeed = 0.8;
-						*/
-
-					// bg.shader = wiggleShit.shader;
-					// fg.shader = wiggleShit.shader;
-
-					/* 
-								var waveSprite = new FlxEffectSprite(bg, [waveEffectBG]);
-								var waveSpriteFG = new FlxEffectSprite(fg, [waveEffectFG]);
-								// Using scale since setGraphicSize() doesnt work???
-								waveSprite.scale.set(6, 6);
-								waveSpriteFG.scale.set(6, 6);
-								waveSprite.setPosition(posX, posY);
-								waveSpriteFG.setPosition(posX, posY);
-								waveSprite.scrollFactor.set(0.7, 0.8);
-								waveSpriteFG.scrollFactor.set(0.9, 0.8);
-								// waveSprite.setGraphicSize(Std.int(waveSprite.width * 6));
-								// waveSprite.updateHitbox();
-								// waveSpriteFG.setGraphicSize(Std.int(fg.width * 6));
-								// waveSpriteFG.updateHitbox();
-								add(waveSprite);
-								add(waveSpriteFG);
-						*/
-			}
 			case 'onslaught':
 			{
 				defaultCamZoom = 0.9;
@@ -574,7 +515,7 @@ class PlayState extends MusicBeatState
 				bg.updateHitbox();
 				bg.active = false;
 				bg.antialiasing = true;
-				bg.scrollFactor.set(0.85, 0.85);
+				bg.scrollFactor.set(0.6, 0.85);
 
 				home.updateHitbox();
 				home.active = false;
@@ -614,6 +555,14 @@ class PlayState extends MusicBeatState
 					bg.active = false;
 					add(bg);
 
+					var thingidk:FlxSprite = new FlxSprite( -271).loadGraphic(Paths.image('bob/happy/middlething'));
+					thingidk.updateHitbox();
+					thingidk.active = false;
+					thingidk.antialiasing = true;
+					thingidk.scrollFactor.set(0.3, 0.3);
+					add(thingidk);
+					// lool
+
 					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
@@ -633,8 +582,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		var gfVersion:String = 'gf';
-
+		var gfVersion:String = SONG.player3;
 		gf = new Character(400, 130, gfVersion);
 		gf.scrollFactor.set(0.95, 0.95);
 
@@ -703,9 +651,24 @@ class PlayState extends MusicBeatState
 				dad.y = 744;
 			case 'little-man-2':
 				camPos.x -= 124;
-				camPos.y += 400;
+				camPos.y += 300;
 				dad.x = 300;
-				dad.y = 744;
+				dad.y = 700;
+		}
+		switch (SONG.player3)
+		{
+			case 'gf-ronman':
+				gf.scrollFactor.set(1, 1); // t hank youuu
+				gf.x += 160;
+				gf.y += 360;
+			case 'gf-moonrise':
+				gf.scrollFactor.set(1, 1); // tyoure" welcome
+				gf.x += 150;
+				gf.y += 250;
+			case 'gf-little-man-halloween':
+				gf.scrollFactor.set(1, 1);
+				gf.x += 130;
+				gf.y += 160;
 		}
 	}
 
@@ -2987,7 +2950,6 @@ class PlayState extends MusicBeatState
 								if (upP && spr.animation.curAnim.name != 'confirm' && !loadRep)
 								{
 									spr.animation.play('pressed');
-									trace('play');
 								}
 								if (upR)
 								{
