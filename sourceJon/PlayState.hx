@@ -758,7 +758,7 @@ class PlayState extends MusicBeatState
 				songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
 				add(songPosBar);
 	
-				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,SONG.song, 16);
+				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,CoolUtil.dashToSpace(SONG.song), 16);
 				if (FlxG.save.data.downscroll)
 					songName.y -= 3;
 				songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
@@ -784,7 +784,7 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 
 		// Add Kade Engine watermark
-		var kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0, SONG.song, 16);
+		var kadeEngineWatermark = new FlxText(4,healthBarBG.y + 50,0, CoolUtil.dashToSpace(SONG.song), 16);
 		kadeEngineWatermark.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.borderSize = 1.5;
 		kadeEngineWatermark.scrollFactor.set();
@@ -1289,7 +1289,7 @@ class PlayState extends MusicBeatState
 			songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
 			add(songPosBar);
 
-			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,SONG.song, 16);
+			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y - 5,0,CoolUtil.dashToSpace(SONG.song), 16);
 			if (FlxG.save.data.downscroll)
 				songName.y -= 3;
 			songName.setFormat(Paths.font("comic.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
@@ -3506,6 +3506,19 @@ class PlayState extends MusicBeatState
 						changeDadCharacter('kill-guy');
 						dad.playAnim('Death', true);
 				}
+			case 'in-your-place':
+				switch(curBeat)
+				{
+					case 16 | 176 | 288:
+						changeDadCharacter('placeholder-guy-scared');
+						dad.x = 170;
+						dad.y = 440;
+						// i hate that this is what works
+					case 136 | 240 | 352:
+						changeDadCharacter('hand-guy');
+						dad.x = 110;
+						dad.y = 180;
+				}
 		}
 		if (curSong == 'Ron')
 		{
@@ -3640,11 +3653,6 @@ class PlayState extends MusicBeatState
 				
 				if (FlxG.random.bool(10) && isbobmad && curSong.toLowerCase() == 'run' && !FlxG.save.data.jumpscare)
 					Bobismad();
-		}
-
-		if (isHalloween && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
-		{
-			lightningStrikeShit();
 		}
 	}
 	function BobIngameTransform()
