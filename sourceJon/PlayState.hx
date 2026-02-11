@@ -596,10 +596,7 @@ class PlayState extends MusicBeatState
 					camPos.x += 600;
 					tweenCamIn();
 				}
-			case 'placeholder-guy':
-				dad.x = 170;
-				dad.y = 440;
-			case 'placeholder-guy-scared':
+			case 'placeholder-guy' | 'placeholder-guy-scared' | 'kill-guy':
 				dad.x = 170;
 				dad.y = 440;
 			case 'hand-guy':
@@ -3502,6 +3499,13 @@ class PlayState extends MusicBeatState
 						case 288:
 							idleAlt = true;
 					}
+			case 'placeholder-shuffle':
+				switch(curBeat)
+				{
+					case 426:
+						changeDadCharacter('kill-guy');
+						dad.playAnim('Death', true);
+				}
 		}
 		if (curSong == 'Ron')
 		{
@@ -3645,7 +3649,6 @@ class PlayState extends MusicBeatState
 	}
 	function BobIngameTransform()
 	{
-		//screw you aether i want to fix the ingame cutscene
 		dad.playAnim('Transform', true);
 		FlxG.sound.play(Paths.sound('bobSpooky'));
 		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);

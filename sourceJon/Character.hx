@@ -335,16 +335,25 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'PlaceholderRight', 24, false);
 				animation.addByPrefix('singDOWN', 'PlaceholderDown', 24, false);
 				animation.addByPrefix('singLEFT', 'PlaceholderLeft', 24, false);
-				animation.addByPrefix('Death', 'RIP_placeholderguy:pray:', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP", 5, 21);
 				addOffset("singRIGHT", -1, -25);
 				addOffset("singLEFT", 101, -28);
 				addOffset("singDOWN", 6, -42);
-				addOffset("Death", 1200, 2000);
 
 				playAnim('idle');
+			case 'kill-guy':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('halloween boo/placeholder-lad');
+				frames = tex;
+				animation.addByPrefix('Death', 'RIP_placeholderguy:pray:', 24, false);
+				animation.addByIndices('Death-loop', "RIP_placeholderguy:pray:", [38], "", 24, true);
+				addOffset("Death", 1180, 1606);
+				addOffset("Death-loop", 1180, 1606);
+
+				playAnim('Death');
+
 			case 'placeholder-guy-scared':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('halloween boo/placeholder-lad');
@@ -489,14 +498,14 @@ class Character extends FlxSprite
 						danced = !danced;
 
 						if (danced)
-							playAnim('danceRight' + fuckYou, true);
+							playAnim('danceRight' + fuckYou);
 						else
-							playAnim('danceLeft' + fuckYou, true);
+							playAnim('danceLeft' + fuckYou);
 					}
-				case 'hand-guy':
-					playAnim('idle' + fuckYou, false);
+				case 'kill-guy':
+					playAnim('Death-loop');
 				default:
-					playAnim('idle' + fuckYou, true);
+					playAnim('idle' + fuckYou);
 			}
 		}
 	}

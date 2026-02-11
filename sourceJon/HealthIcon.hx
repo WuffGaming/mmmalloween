@@ -49,6 +49,7 @@ class HealthIcon extends FlxSprite
 		animation.add('ronman', [42, 43], 0, false, isPlayer);
 		animation.add('little-man-2', [44, 45], 0, false, isPlayer);
 		animation.add('placeholder-guy', [10, 11], 0, false, isPlayer);
+		animation.add('kill-guy', [11, 11], 0, false, isPlayer);
 		animation.add('placeholder-guy-scared', [10, 11], 0, false, isPlayer);
 		animation.add('hand-guy', [46, 47], 0, false, isPlayer);
 		animation.add('oh-no', [48, 49], 0, false, isPlayer);
