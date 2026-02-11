@@ -68,7 +68,6 @@ class Note extends FlxSprite
 		{
 			case 'Hurt Note':
 				hurtNote = true;
-				mustPress = false;
 		}
 
 		this.noteData = noteData;
@@ -190,9 +189,10 @@ class Note extends FlxSprite
 			updateHitbox();
 
 			x -= width / 2;
-
-			if (PlayState.curStage.startsWith('school'))
-				x += 30;
+			if (hurtNote)
+			{
+				x += 20;
+			}
 
 			if (prevNote.isSustainNote)
 			{

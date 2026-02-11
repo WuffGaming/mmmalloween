@@ -2233,12 +2233,19 @@ class PlayState extends MusicBeatState
 						{
 							HealthDrain();
 						}
-						else if (!daNote.warning || !daNote.hurtNote)
+						else
 						{
-							health -= 0.075;
-							vocals.volume = 0;
-							if (theFunne)
-								noteMiss(daNote.noteData, daNote);
+							switch (daNote.noteType)
+							{
+								case 'Hurt Note':
+									health -= 0;
+									// you cant hurt if you cant bye
+								default:
+									health -= 0.075;
+									vocals.volume = 0;
+									if (theFunne)
+										noteMiss(daNote.noteData, daNote);
+							}
 						}
 	
 						daNote.active = false;
@@ -2761,7 +2768,7 @@ class PlayState extends MusicBeatState
 	
 				notes.forEachAlive(function(daNote:Note)
 				{
-					if (daNote.canBeHit && daNote.mustPress && !daNote.tooLate)
+					if (daNote.canBeHit && daNote.mustPress && !daNote.tooLate /**&& !daNote.hurtNote**/)
 					{
 						// the sorting probably doesn't need to be in here? who cares lol
 						possibleNotes.push(daNote);
@@ -2899,7 +2906,7 @@ class PlayState extends MusicBeatState
 			{
 				notes.forEachAlive(function(daNote:Note)
 				{
-					if (daNote.canBeHit && daNote.mustPress && daNote.isSustainNote)
+					if (daNote.canBeHit && daNote.mustPress && daNote.isSustainNote && !daNote.hurtNote)
 					{
 						switch (daNote.noteData)
 						{
@@ -3189,7 +3196,7 @@ class PlayState extends MusicBeatState
 					{
 						health -= 0.25;
 					}
-					else if (!note.isSustainNote || !note.hurtNote)
+					else if (!note.isSustainNote)
 					{
 						popUpScore(note);
 						combo += 1;
