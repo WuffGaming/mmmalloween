@@ -54,6 +54,7 @@ class PlayState extends MusicBeatState
 {
 	public static var curStage:String = '';
 	public static var SONG:SwagSong;
+	public static var note:Note;
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
@@ -2231,7 +2232,7 @@ class PlayState extends MusicBeatState
 						{
 							HealthDrain();
 						}
-						else if (!daNote.warning)
+						else if (!daNote.warning || !daNote.hurtNote)
 						{
 							health -= 0.075;
 							vocals.volume = 0;
@@ -3186,7 +3187,6 @@ class PlayState extends MusicBeatState
 
 		function goodNoteHit(note:Note, resetMashViolation = true):Void
 			{
-
 				var noteDiff:Float = Math.abs(note.strumTime - Conductor.songPosition);
 
 				note.rating = Ratings.CalculateRating(noteDiff);
@@ -3203,6 +3203,10 @@ class PlayState extends MusicBeatState
 					{
 						HealthDrain();
 					}
+					if (note.hurtNote)
+					{
+						health -= 0.25;
+					}
 					else if (!note.isSustainNote)
 					{
 						popUpScore(note);
@@ -3210,7 +3214,7 @@ class PlayState extends MusicBeatState
 					}
 					else
 						totalNotesHit += 1;
-					if (!note.warning)
+					if (!note.warning || !note.hurtNote)
 					{
 						switch (note.noteData)
 						{

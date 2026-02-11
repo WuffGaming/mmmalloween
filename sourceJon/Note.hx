@@ -5,8 +5,6 @@ import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
-import flixel.effects.particles.FlxEmitter;
-import flixel.effects.particles.FlxParticle;
 
 #if polymod
 import polymod.format.ParseRules.TargetSignatureElement;
@@ -20,6 +18,7 @@ class Note extends FlxSprite
 
 	public var mustPress:Bool = false;
 	public var warning:Bool = false;
+	public var hurtNote:Bool = false;
 	public var mustHitNotes:Bool = false;
 	public var noteData:Int = 0;
 	public var canBeHit:Bool = false;
@@ -31,8 +30,7 @@ class Note extends FlxSprite
 	public var isSustainNote:Bool = false;
 
 	public var noteScore:Float = 1;
-	
-	public var emitter:FlxEmitter = null;
+	public var noteType:String = '';
 
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var PURP_NOTE:Int = 0;
@@ -42,7 +40,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?_warning:Bool = false, ?_mustHitNotes:Bool = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?_warning:Bool = false, ?_mustHitNotes:Bool = false, ?_hurtnote = false)
 	{
 		super();
 
@@ -55,6 +53,7 @@ class Note extends FlxSprite
 		
 		warning = _warning;
 		mustHitNotes = _mustHitNotes;
+		hurtNote = _hurtnote;
 
 		x += 50;
 		// MAKE SURE ITS DEFINITELY OFF SCREEN?
@@ -63,6 +62,13 @@ class Note extends FlxSprite
 
 		if (this.strumTime < 0 )
 			this.strumTime = 0;
+
+		// attempt at psych shit
+		switch (noteType)
+		{
+			case 'Hurt Note':
+				hurtNote = true;
+		}
 
 		this.noteData = noteData;
 		var daStage:String = PlayState.curStage;
@@ -79,22 +85,10 @@ class Note extends FlxSprite
 				updateHitbox();
 				antialiasing = true;
 		}
+		
 		else if (mustHitNotes)
 		{
 			frames = Paths.getSparrowAtlas('bob/CustomNotes');
-			/*emitter = new FlxEmitter();
-			for (i in 0 ... 10)
-			{
-				var p:FlxParticle = new FlxParticle();
-				p.loadGraphic("bob/notelol", false, 32, 32);
-				// p.animation.add("my-sparkle", [0,1,2,3], 10, true);
-				// p.animation.play("my-sparkle");
-				p.exists = false;
-				emitter.add(p);
-			}
-			add(emitter);
-			emitter.start(false, 1, 0.02);
-			didnt work lol*/
 			
 				animation.addByPrefix('greenScroll', 'hitUp');
 				animation.addByPrefix('redScroll', 'hitRight');
@@ -105,36 +99,33 @@ class Note extends FlxSprite
 				updateHitbox();
 				antialiasing = true;
 		}
+		else if (hurtNote)
+		{
+			frames = Paths.getSparrowAtlas('HURTNOTE_assets');
+			
+				animation.addByPrefix('greenScroll', 'green');
+				animation.addByPrefix('redScroll', 'red');
+				animation.addByPrefix('blueScroll', 'blue');
+				animation.addByPrefix('purpleScroll', 'purple');
+
+				animation.addByPrefix('purpleholdend', 'pruple end hold');
+				animation.addByPrefix('greenholdend', 'green hold end');
+				animation.addByPrefix('redholdend', 'red hold end');
+				animation.addByPrefix('blueholdend', 'blue hold end');
+
+				animation.addByPrefix('purplehold', 'purple hold piece');
+				animation.addByPrefix('greenhold', 'green hold piece');
+				animation.addByPrefix('redhold', 'red hold piece');
+				animation.addByPrefix('bluehold', 'blue hold piece');
+
+				setGraphicSize(Std.int(width * 0.7));
+				updateHitbox();
+				antialiasing = true;
+		}
 		else
 		{
-			switch (daStage)
+		switch (daStage)
 		{
-			case 'school' | 'schoolEvil':
-				loadGraphic(Paths.image('weeb/pixelUI/arrows-pixels'), true, 17, 17);
-
-				animation.add('greenScroll', [6]);
-				animation.add('redScroll', [7]);
-				animation.add('blueScroll', [5]);
-				animation.add('purpleScroll', [4]);
-
-				if (isSustainNote)
-				{
-					loadGraphic(Paths.image('weeb/pixelUI/arrowEnds'), true, 7, 6);
-
-					animation.add('purpleholdend', [4]);
-					animation.add('greenholdend', [6]);
-					animation.add('redholdend', [7]);
-					animation.add('blueholdend', [5]);
-
-					animation.add('purplehold', [0]);
-					animation.add('greenhold', [2]);
-					animation.add('redhold', [3]);
-					animation.add('bluehold', [1]);
-				}
-
-				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
-				updateHitbox();
-
 			default:
 				frames = Paths.getSparrowAtlas('NOTE_assets');
 
@@ -175,12 +166,6 @@ class Note extends FlxSprite
 				x += swagWidth * 3;
 				animation.play('redScroll');
 		}
-
-		// trace(prevNote);
-
-		// we make sure its downscroll and its a SUSTAIN NOTE (aka a trail, not a note)
-		// and flip it so it doesn't look weird.
-		// THIS DOESN'T FUCKING FLIP THE NOTE, CONTRIBUTERS DON'T JUST COMMENT THIS OUT JESUS
 
 		if (isSustainNote && prevNote != null)
 		{
