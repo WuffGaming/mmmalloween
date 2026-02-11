@@ -563,7 +563,7 @@ class ChartingState extends MusicBeatState
 							}
 						}
 					trace('adding note');
-					_song.notes[curSection].sectionNotes.push([Conductor.songPosition, i, 0]);
+					_song.notes[curSection].sectionNotes.push([Conductor.songPosition, i, 0, '']);
 					updateGrid();
 				}
 			}
@@ -898,7 +898,7 @@ class ChartingState extends MusicBeatState
 		{
 			var strum = note[0] + Conductor.stepCrochet * (_song.notes[daSec].lengthInSteps * sectionNum);
 
-			var copiedNote:Array<Dynamic> = [strum, note[1], note[2]];
+			var copiedNote:Array<Dynamic> = [strum, note[1], note[2], ''];
 			_song.notes[daSec].sectionNotes.push(copiedNote);
 		}
 
@@ -994,8 +994,9 @@ class ChartingState extends MusicBeatState
 			var daNoteInfo = i[1];
 			var daStrumTime = i[0];
 			var daSus = i[2];
+			var daType = i[3];
 
-			var note:Note = new Note(daStrumTime, daNoteInfo % 4);
+			var note:Note = new Note(daStrumTime, daNoteInfo % 4, null, false, daType);
 			note.sustainLength = daSus;
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 			note.updateHitbox();
@@ -1087,13 +1088,13 @@ class ChartingState extends MusicBeatState
 		var noteStrum = getStrumTime(dummyArrow.y) + sectionStartTime();
 		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE);
 		var noteSus = 0;
-		var noteStyle = n.noteType;
+		var noteType = '';
 		// oh yeah n = note calc is short for calculator uh oh uh FUck you
 
 		if (n != null)
 			_song.notes[curSection].sectionNotes.push([n.strumTime, n.noteData, n.sustainLength, n.noteType]);
 		else
-			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, noteSus, noteStyle]);
+			_song.notes[curSection].sectionNotes.push([noteStrum, noteData, noteSus, noteType]);
 
 		var thingy = _song.notes[curSection].sectionNotes[_song.notes[curSection].sectionNotes.length - 1];
 

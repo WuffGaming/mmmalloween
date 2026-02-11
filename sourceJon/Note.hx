@@ -25,12 +25,12 @@ class Note extends FlxSprite
 	public var tooLate:Bool = false;
 	public var wasGoodHit:Bool = false;
 	public var prevNote:Note;
+	public var noteType:String = '';
 
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
 
 	public var noteScore:Float = 1;
-	public var noteType:String = '';
 
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var PURP_NOTE:Int = 0;
@@ -40,16 +40,16 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?_warning:Bool = false, ?_mustHitNotes:Bool = false, ?_hurtnote = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, noteType:String = '', ?_warning:Bool = false, ?_mustHitNotes:Bool = false, ?_hurtnote = false)
 	{
 		super();
 
 		if (prevNote == null)
 			prevNote = this;
 		
-		
 		this.prevNote = prevNote;
 		isSustainNote = sustainNote;
+		this.noteType = noteType;
 		
 		warning = _warning;
 		mustHitNotes = _mustHitNotes;
@@ -68,6 +68,7 @@ class Note extends FlxSprite
 		{
 			case 'Hurt Note':
 				hurtNote = true;
+				mustPress = false;
 		}
 
 		this.noteData = noteData;
@@ -103,10 +104,10 @@ class Note extends FlxSprite
 		{
 			frames = Paths.getSparrowAtlas('HURTNOTE_assets');
 			
-				animation.addByPrefix('greenScroll', 'green');
-				animation.addByPrefix('redScroll', 'red');
-				animation.addByPrefix('blueScroll', 'blue');
-				animation.addByPrefix('purpleScroll', 'purple');
+				animation.addByPrefix('greenScroll', 'green0');
+				animation.addByPrefix('redScroll', 'red0');
+				animation.addByPrefix('blueScroll', 'blue0');
+				animation.addByPrefix('purpleScroll', 'purple0');
 
 				animation.addByPrefix('purpleholdend', 'pruple end hold');
 				animation.addByPrefix('greenholdend', 'green hold end');

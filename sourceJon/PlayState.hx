@@ -1370,7 +1370,8 @@ class PlayState extends MusicBeatState
 				else
 					oldNote = null;
 
-				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
+				var daType = songNotes[3];
+				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote, false, daType);
 				swagNote.sustainLength = songNotes[2];
 				swagNote.scrollFactor.set(0, 0);
 
@@ -1383,7 +1384,7 @@ class PlayState extends MusicBeatState
 				{
 					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
+					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, daType);
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
 
@@ -1423,11 +1424,11 @@ class PlayState extends MusicBeatState
 					var warnNote:Note;
 					if (DoIHit)
 					{
-						warnNote = new Note(notethingidk, shootBeatsPosEasy[x], null, false, true);
+						warnNote = new Note(notethingidk, shootBeatsPosEasy[x], null, false, '', true);
 					}
 					else
 					{
-						warnNote = new Note(notethingidk, shootBeatsPosEasy[x], null, false, false, true);
+						warnNote = new Note(notethingidk, shootBeatsPosEasy[x], null, false, '', false, true);
 					}
 					DoIHit = !DoIHit;
 					warnNote.scrollFactor.set(0, 0);
@@ -1446,11 +1447,11 @@ class PlayState extends MusicBeatState
 					var warnNote:Note;
 					if (DoIHit)
 					{
-						warnNote = new Note(notethingidk, shootBeatsPos[x], null, false, true);
+						warnNote = new Note(notethingidk, shootBeatsPos[x], null, false, '', true);
 					}
 					else
 					{
-						warnNote = new Note(notethingidk, shootBeatsPos[x], null, false, false, true);
+						warnNote = new Note(notethingidk, shootBeatsPos[x], null, false, '', false, true);
 					}
 					DoIHit = !DoIHit;
 					warnNote.scrollFactor.set(0, 0);
@@ -2436,6 +2437,7 @@ class PlayState extends MusicBeatState
 						health += 0.1;
 					sicks++;
 			}
+			
 
 			// trace('Wife accuracy loss: ' + wife + ' | Rating: ' + daRating + ' | Score: ' + score + ' | Weight: ' + (1 - wife));
 
@@ -3040,7 +3042,7 @@ class PlayState extends MusicBeatState
 
 	function noteMiss(direction:Int = 1, daNote:Note):Void
 	{
-		if (!boyfriend.stunned)
+		if (!boyfriend.stunned || !note.hurtNote)
 		{
 			health -= 0.04;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
@@ -3077,26 +3079,6 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	/*function badNoteCheck()
-		{
-			// just double pasting this shit cuz fuk u
-			// REDO THIS SYSTEM!
-			var upP = controls.UP_P;
-			var rightP = controls.RIGHT_P;
-			var downP = controls.DOWN_P;
-			var leftP = controls.LEFT_P;
-	
-			if (leftP)
-				noteMiss(0);
-			if (upP)
-				noteMiss(2);
-			if (rightP)
-				noteMiss(3);
-			if (downP)
-				noteMiss(1);
-			updateAccuracy();
-		}
-	*/
 	function updateAccuracy() 
 		{
 			totalPlayed += 1;
@@ -3207,7 +3189,7 @@ class PlayState extends MusicBeatState
 					{
 						health -= 0.25;
 					}
-					else if (!note.isSustainNote)
+					else if (!note.isSustainNote || !note.hurtNote)
 					{
 						popUpScore(note);
 						combo += 1;
@@ -3237,7 +3219,7 @@ class PlayState extends MusicBeatState
 								spr.animation.play('confirm', true);
 							}
 						});
-		
+						
 					note.wasGoodHit = true;
 					vocals.volume = 1;
 		
@@ -3248,29 +3230,6 @@ class PlayState extends MusicBeatState
 					updateAccuracy();
 				}
 			}
-		
-
-	var fastCarCanDrive:Bool = true;
-
-	function resetFastCar():Void
-	{
-		fastCar.x = -12600;
-		fastCar.y = FlxG.random.int(140, 250);
-		fastCar.velocity.x = 0;
-		fastCarCanDrive = true;
-	}
-
-	function fastCarDrive()
-	{
-		FlxG.sound.play(Paths.soundRandom('carPass', 0, 1), 0.7);
-
-		fastCar.velocity.x = (FlxG.random.int(170, 220) / FlxG.elapsed) * 3;
-		fastCarCanDrive = false;
-		new FlxTimer().start(2, function(tmr:FlxTimer)
-		{
-			resetFastCar();
-		});
-	}
 	
 	var isbobmad:Bool = true;
 	var appearscreen:Bool = true;
