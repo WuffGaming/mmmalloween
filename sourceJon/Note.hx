@@ -191,7 +191,7 @@ class Note extends FlxSprite
 			x -= width / 2;
 			if (hurtNote)
 			{
-				x += 20;
+				x += width;
 			}
 
 			if (prevNote.isSustainNote)
