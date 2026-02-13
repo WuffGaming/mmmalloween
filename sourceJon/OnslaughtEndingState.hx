@@ -29,41 +29,8 @@ class OnslaughtEndingState extends FlxState
 		neverforget.setFormat("Arial",20,FlxColor.WHITE,FlxTextAlign.CENTER,FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		neverforget.text = "https://drive.google.com/drive/folders/1ZuEJU_0WlaBBLxWhJ6EPhXLcRL7b1TTn?usp=sharing";
 		FlxG.sound.playMusic(Paths.music("youcantrun"),0);
-		/*add(texty);
-		new FlxTimer().start(4, function(deadTime:FlxTimer)
-		{
-			var dialognumber:Int = 0;
-			var textdialog:String;
-			FlxG.sound.playMusic(Paths.music("ILL_NEVER_FORGET_YOU"),1);
-			add(bobissssssss);
-			bobissssssss.animation.play('idle');
-			new FlxTimer().start(3, function(tmr:FlxTimer)
-			{
-				if (textdialog == "I L L  N E V E R  F O R G E T  Y O U")
-				{
-					FlxG.sound.playMusic(Paths.music("ILL_NEVER_FORGET_YOU"),0);
-					remove(texty);
-					bobissssssss.animation.play('scaryidle');
-					//bobissssssss.play('scaryidle');
-					new FlxTimer().start(4, function(deadTime:FlxTimer)
-					{
-						add(neverforget);
-						neverforget.text = "I L L  N E V E R  F O R G E T  Y O U";
-						new FlxTimer().start(3, function(deadTime:FlxTimer)
-						{
-							crash = true;
-						});
-					});
-				}
-				else
-				{
-					textdialog = dialogue[dialognumber];
-					texty.text = textdialog;
-				}
-				dialognumber = dialognumber + 1;
-			}, 11);
-		});*/
 		//please dont look at this god awful code
+		// ok i wont
 		FlxG.sound.playMusic(Paths.music("oooh_scary"),1);
 		new FlxTimer().start(4, function(deadTime:FlxTimer)
 		{

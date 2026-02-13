@@ -34,7 +34,7 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'options', 'donate'];
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -53,10 +53,6 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		/**if (FlxG.random.bool(4))
-		{
-			GuyAppears(FlxG.random.int(1, 3));
-		}**/
 		#if windows
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -69,9 +65,9 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('mainMenu/menuBG'));
 		bg.scrollFactor.x = 0;
-		bg.scrollFactor.y = 0.18;
+		bg.scrollFactor.y = 0;
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();
 		bg.screenCenter();
@@ -81,9 +77,9 @@ class MainMenuState extends MusicBeatState
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('mainMenu/menuDesat'));
 		magenta.scrollFactor.x = 0;
-		magenta.scrollFactor.y = 0.18;
+		magenta.scrollFactor.y = 0;
 		magenta.setGraphicSize(Std.int(magenta.width * 1.1));
 		magenta.updateHitbox();
 		magenta.screenCenter();
@@ -102,10 +98,10 @@ class MainMenuState extends MusicBeatState
 		if (FlxG.random.bool(10))
 		{
 			isguydancing = true;
-			GuyAppears(FlxG.random.int(1, 4));
+			GuyAppears(FlxG.random.int(1, 3));
 		}
 
-		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
+		var tex = Paths.getSparrowAtlas('mainMenu/FNF_main_menu_assets');
 
 		for (i in 0...optionShit.length)
 		{
@@ -255,7 +251,7 @@ class MainMenuState extends MusicBeatState
 			secretmusic.looped = true;
 			secretmusic.volume = 0.3;
 			secretguy = new FlxSprite(0, 0);
-			secretguy.frames = Paths.getSparrowAtlas('CoolDance');
+			secretguy.frames = Paths.getSparrowAtlas('mainMenu/CoolDance');
 			secretguy.animation.addByPrefix('idle', 'CoolGuy', 24);
 			secretguy.updateHitbox();
 			secretguy.scrollFactor.set();
@@ -269,7 +265,7 @@ class MainMenuState extends MusicBeatState
 				secretmusic.looped = true;
 				secretmusic.volume = 0.3;
 				secretguy = new FlxSprite(0, 0);
-				secretguy.frames = Paths.getSparrowAtlas('Sorting');
+				secretguy.frames = Paths.getSparrowAtlas('mainMenu/Sorting');
 				secretguy.animation.addByPrefix('idle', 'Sorting', 24);
 				secretguy.updateHitbox();
 				secretguy.scrollFactor.set();
@@ -283,7 +279,7 @@ class MainMenuState extends MusicBeatState
 					secretmusic.looped = true;
 					secretmusic.volume = 0.3;
 					secretguy = new FlxSprite(0, 0);
-					secretguy.frames = Paths.getSparrowAtlas('Spong');
+					secretguy.frames = Paths.getSparrowAtlas('mainMenu/Spong');
 					secretguy.animation.addByPrefix('idle', 'Dad idle dance', 24);
 					secretguy.updateHitbox();
 					secretguy.scrollFactor.set();
@@ -291,7 +287,7 @@ class MainMenuState extends MusicBeatState
 					secretmusic.play();
 					secretguy.animation.play('idle');
 				}
-		if (rando == 4)
+		/**if (rando == 4)
 			{
 				secretmusic = new FlxSound().loadEmbedded(Paths.sound('crazy_little_guy'));
 				secretmusic.looped = true;
@@ -304,7 +300,7 @@ class MainMenuState extends MusicBeatState
 				add(secretguy);
 				secretmusic.play();
 				secretguy.animation.play('idle');
-			}
+			}**/
 	}
 	function changeItem(huh:Int = 0)
 	{

@@ -12,7 +12,7 @@ class ThankYouState extends MusicBeatState
 	override function create()
 	{
 		super.create();
-		var thx:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('bob/thankers', 'shared'));
+		var thx:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('mainMenu/thankers'));
 		add(thx);
 		FlxG.camera.fade(FlxColor.BLACK, 0.8, true);
 	}

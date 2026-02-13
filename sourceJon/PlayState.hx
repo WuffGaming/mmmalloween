@@ -161,7 +161,6 @@ class PlayState extends MusicBeatState
 	var trainSound:FlxSound;
 
 	var limo:FlxSprite;
-	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var bobmadshake:FlxSprite;
 	var bobsound:FlxSound;
 	var fastCar:FlxSprite;
@@ -172,8 +171,6 @@ class PlayState extends MusicBeatState
 	var RonTurn:Bool = true;
 
 	var fc:Bool = true;
-
-	var bgGirls:BackgroundGirls;
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 
 	//var randomThing:Float = Math.random();
@@ -2232,6 +2229,10 @@ class PlayState extends MusicBeatState
 						else if (daNote.mustHitNotes)
 						{
 							HealthDrain();
+						}
+						else if (daNote.warning)
+						{
+							health -= 0;
 						}
 						else
 						{

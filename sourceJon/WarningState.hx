@@ -15,7 +15,7 @@ class WarningState extends MusicBeatState
 	{
 		super.create();
 		FlxG.sound.music.fadeIn(0.5, 0.7, 0.1);
-		var thx:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('WARNINGSCRENWARNINGSCREN', 'preload'));
+		var thx:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('mainMenu/WARNINGSCRENWARNINGSCREN'));
 		add(thx);
 	}
 
