@@ -1,85 +1,63 @@
 package;
-//bitcoiner
-#if windows
-import Sys.sleep;
-import discord_rpc.DiscordRpc;
+import hxdiscord_rpc.Discord;
+import hxdiscord_rpc.Types;
 
-using StringTools;
-
-class DiscordClient
+/**
+ * TODO: FIX
+ */
+class Discord
 {
-	public function new()
+	/**
+	private static var appid:String = '852943859922370570';
+
+	private static var discordPresence:DiscordRichPresence = new DiscordRichPresence();
+
+	static public function init():Void
 	{
-		trace("bitcoiner");
-		DiscordRpc.start({
-			clientID: "852943859922370570", // change this to what ever the fuck you want lol852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758852931205794889758
-			onError: onError,
-			onDisconnected: onDisconnected
-		});
-		trace("bitcoiner");
-		while (true)
-		{
-			DiscordRpc.process();
-			sleep(2);
-			//trace("Discord Client Update");
-		}
-		DiscordRpc.shutdown();
+		final handlers:DiscordEventHandlers = new DiscordEventHandlers();
+		handlers.ready = cpp.Function.fromStaticFunction(onReady);
+		handlers.disconnected = cpp.Function.fromStaticFunction(onDisconnected);
+		handlers.errored = cpp.Function.fromStaticFunction(onError);
+		Discord.Initialize(appid, cpp.RawPointer.addressOf(handlers), true, null);
+		changePresence();
 	}
 
-	public static function shutdown()
+	static public function changePresence(details:String = 'In the Menus', state:String = ''):Void
 	{
-		DiscordRpc.shutdown();
-	}
-	static function onReady()
-	{
-		DiscordRpc.presence({
-			details: "In the Menus",
-			state: null,
-			largeImageKey: 'largeimagekey',
-			largeImageText: "mmmmbob"
-		});
+		discordPresence.state = state;
+		discordPresence.details = details;
+		discordPresence.largeImageKey = "largeimagekey";
+		discordPresence.smallImageKey = "icon64";
+		Discord.UpdatePresence(cpp.RawConstPointer.addressOf(discordPresence));
 	}
 
-	static function onError(_code:Int, _message:String)
+	static function onReady(request:cpp.RawConstPointer<DiscordUser>):Void
 	{
-		trace('Error! $_code : $_message');
+		final username:String = request[0].username;
+		final globalName:String = request[0].username;
+		final discriminator:Int = Std.parseInt(request[0].discriminator);
+
+		if (discriminator != 0)
+			trace('Discord: Connected to user ${username}#${discriminator} ($globalName)');
+		else
+			trace('Discord: Connected to user @${username} ($globalName)');
 	}
 
-	static function onDisconnected(_code:Int, _message:String)
+	private static function onDisconnected(errorCode:Int, message:cpp.ConstCharStar):Void
 	{
-		trace('Disconnected! $_code : $_message');
+		trace('Discord: Disconnected ($errorCode:$message)');
 	}
 
-	public static function initialize()
+	private static function onError(errorCode:Int, message:cpp.ConstCharStar):Void
 	{
-		var DiscordDaemon = sys.thread.Thread.create(() ->
-		{
-			new DiscordClient();
-		});
-		trace("Discord Client initialized");
+		trace('Discord: Error ($errorCode:$message)');
+	}
+	**/
+	static public function init():Void
+	{
 	}
 
-	public static function changePresence(details:String, state:Null<String>, ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float)
+	static public function changePresence(details:String = 'In the Menus', state:String = ''):Void
 	{
-		var startTimestamp:Float = if(hasStartTimestamp) Date.now().getTime() else 0;
-
-		if (endTimestamp > 0)
-		{
-			endTimestamp = startTimestamp + endTimestamp;
-		}
-
-		DiscordRpc.presence({
-			details: details,
-			state: state,
-			largeImageKey: 'largeimagekey',
-			largeImageText: "mmmmbob",
-			smallImageKey : smallImageKey,
-			// Obtained times are in milliseconds so they are divided so Discord can use it
-			startTimestamp : Std.int(startTimestamp / 1000),
-            endTimestamp : Std.int(endTimestamp / 1000)
-		});
-
-		//trace('Discord RPC Updated. Arguments: $details, $state, $smallImageKey, $hasStartTimestamp, $endTimestamp');
 	}
 }
-#end

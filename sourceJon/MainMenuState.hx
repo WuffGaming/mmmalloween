@@ -8,15 +8,14 @@ import flixel.effects.FlxFlicker;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.text.FlxText;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
-import io.newgrounds.NG;
 import lime.app.Application;
 
 #if windows
-import Discord.DiscordClient;
+import Discord;
 #end
 
 using StringTools;
@@ -55,7 +54,7 @@ class MainMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		Discord.changePresence("In the Menus");
 		#end
 
 		if (!FlxG.sound.music.playing)

@@ -98,18 +98,17 @@
 	
 	<haxedev set='webgl' />
 
-	<!--In case you want to use the addons package-->
+	<haxedev set='webgl' />
+	<haxelib name="flixel" />
 	<haxelib name="flixel-addons" />
+	<haxelib name="flixel-ui" />
 	<haxelib name="hscript" />
 	<haxelib name="actuate" />
-    <haxelib name="extension-webm" if="desktop" />
-
-	<!--In case you want to use the ui package-->
-	<haxelib name="flixel-ui" />
-	<haxelib name="newgrounds"/>
+	<haxelib name="extension-webm" if="desktop" />
+	<haxelib name="hxvlc" if="desktop || android" />
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="polymod"/>
-	<haxelib name="discord_rpc" if="windows"/>
+	<haxelib name="hxdiscord_rpc" if="desktop"/>
 	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
 
 	<!-- <haxelib name="markdown" /> -->

@@ -1,3 +1,10 @@
-exportJon/
-.vscode/
-/.vs
+exportJon/*
+.vs/*
+.git
+.DS_Store
+.icloud
+.haxelib/*
+.history
+.ionide
+vscode-project.hxml
+!.vscode/settings.json

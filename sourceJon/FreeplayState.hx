@@ -12,7 +12,7 @@ import lime.utils.Assets;
 
 
 #if windows
-import Discord.DiscordClient;
+import Discord;
 #end
 
 using StringTools;
@@ -55,7 +55,7 @@ class FreeplayState extends MusicBeatState
 
 		 #if windows
 		 // Updating Discord Rich Presence
-		 DiscordClient.changePresence("In the Menus", null);
+		 Discord.changePresence("In the Menus");
 		 #end
 
 		var isDebug:Bool = false;
@@ -241,16 +241,7 @@ class FreeplayState extends MusicBeatState
 
 	function changeSelection(change:Int = 0)
 	{
-		#if !switch
-		// NGio.logEvent('Fresh');
-		#end
-
-		// NGio.logEvent('Fresh');
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
-		if (songs[curSelected].songName == 'run')
-		{
-			
-		}
 		curSelected += change;
 
 		if (curSelected < 0)
@@ -263,10 +254,6 @@ class FreeplayState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		// lerpScore = 0;
-		#end
-
-		#if PRELOAD_ALL
-		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 		#end
 
 		var bullShit:Int = 0;
