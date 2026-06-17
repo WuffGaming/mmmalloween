@@ -43,6 +43,7 @@ import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
+import flixel.addons.display.FlxBackdrop;
 
 #if windows
 import Discord;
@@ -394,10 +395,9 @@ class PlayState extends MusicBeatState
 				defaultCamZoom = 0.9;
 				curStage = 'slaught';
 				var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('bob/scary_sky'));
-				bg.updateHitbox();
-				bg.active = false;
 				bg.antialiasing = true;
 				bg.scrollFactor.set(0.1, 0.1);
+				bg.updateHitbox();
 				add(bg);
 				/*var glitchEffect = new FlxGlitchEffect(8,10,0.4,FlxGlitchDirection.HORIZONTAL);
 				var glitchSprite = new FlxEffectSprite(bg, [glitchEffect]);
@@ -414,11 +414,13 @@ class PlayState extends MusicBeatState
 			{
 				defaultCamZoom = 0.9;
 				curStage = 'slaughts';
-				var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('bob/scary_sky'));
+				var bg:FlxBackdrop = new FlxBackdrop(Paths.image('bob/scary_sky'), X);
+				bg.y -= 50;
 				bg.updateHitbox();
-				bg.active = false;
+				bg.active = true;
 				bg.antialiasing = true;
 				bg.scrollFactor.set(0.1, 0.1);
+				bg.velocity.set(50, 0);
 				add(bg);
 				/*var glitchEffect = new FlxGlitchEffect(8,10,0.4,FlxGlitchDirection.HORIZONTAL);
 				var glitchSprite = new FlxEffectSprite(bg, [glitchEffect]);
